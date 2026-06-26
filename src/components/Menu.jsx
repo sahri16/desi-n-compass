@@ -1,0 +1,130 @@
+import React, { useState } from 'react';
+import Reveal from './Reveal';
+import { COLORS, MENU_DATA } from '../data/constants';
+
+const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+
+const Menu = () => {
+  const [activeTab, setActiveTab] = useState(0);
+
+  return (
+    <section id="menu" className="section-pad" style={{ padding: '100px 60px', background: 'rgba(255,255,255,0.01)' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
+
+        {/* Header */}
+        <Reveal style={{ textAlign: 'center', marginBottom: 56 }}>
+          <span className="section-badge">Culinary Craftsmanship</span>
+          <h2 className="section-title">
+            Our Signature <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Menu</span>
+          </h2>
+          <div className="gold-line" style={{ margin: '18px auto' }} />
+        </Reveal>
+
+        {/* Tabs */}
+        <div style={{ display: 'flex', justifyContent: 'center', gap: 10, marginBottom: 48, flexWrap: 'wrap' }}>
+          {MENU_DATA.map((cat, i) => (
+            <button
+              key={i}
+              className={`tab-btn${activeTab === i ? ' active' : ''}`}
+              onClick={() => setActiveTab(i)}
+            >
+              <i className={`fa-solid ${cat.faIcon}`} style={{ fontSize: 13 }} />
+              {cat.category}
+            </button>
+          ))}
+        </div>
+
+        {/* Cards Grid */}
+        <div
+          className="menu-grid-4"
+          style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}
+        >
+          {MENU_DATA[activeTab].items.map((item, i) => (
+            <Reveal key={item.name} delay={i * 0.08}>
+              <div className="menu-card" style={{ height: '100%' }}>
+
+                {/* Image */}
+                <div style={{ position: 'relative', overflow: 'hidden' }}>
+                  <img
+                    className="menu-img"
+                    src={item.img}
+                    alt={item.name}
+                    loading="lazy"
+                    onError={(e) => { e.target.style.display = 'none'; }}
+                  />
+                  {/* Tag */}
+                  <div
+                    style={{
+                      position: 'absolute', top: 12, left: 12,
+                      background: COLORS.gold, color: COLORS.black,
+                      fontSize: 10, fontWeight: 700, letterSpacing: '1.5px',
+                      padding: '4px 10px', borderRadius: 3, textTransform: 'uppercase',
+                    }}
+                  >
+                    {item.tag}
+                  </div>
+                  {/* Price */}
+                  <div
+                    style={{
+                      position: 'absolute', top: 12, right: 12,
+                      background: 'rgba(26,15,16,0.85)', backdropFilter: 'blur(8px)',
+                      border: '1px solid rgba(242,187,60,0.35)',
+                      color: COLORS.gold, fontSize: 14, fontWeight: 700,
+                      padding: '4px 12px', borderRadius: 4,
+                      fontFamily: "'Playfair Display',serif",
+                    }}
+                  >
+                    {item.price}
+                  </div>
+                </div>
+
+                {/* Info */}
+                <div style={{ padding: '18px 20px 22px' }}>
+                  <div
+                    style={{
+                      fontFamily: "'Playfair Display',serif",
+                      fontSize: 18, fontWeight: 600,
+                      color: '#fff', marginBottom: 8, lineHeight: 1.25,
+                    }}
+                  >
+                    {item.name}
+                  </div>
+                  <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, lineHeight: 1.6, fontWeight: 300 }}>
+                    {item.desc}
+                  </div>
+
+                  {/* Footer */}
+                  <div
+                    style={{
+                      marginTop: 16, paddingTop: 14,
+                      borderTop: '1px solid rgba(242,187,60,0.1)',
+                      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                    }}
+                  >
+                    <div style={{ display: 'flex', gap: 2 }}>
+                      {[1, 2, 3, 4, 5].map((s) => (
+                        <i key={s} className="fa-solid fa-star" style={{ color: COLORS.gold, fontSize: 10 }} />
+                      ))}
+                    </div>
+                    <span style={{ color: 'rgba(255,255,255,0.3)', fontSize: 11, letterSpacing: '1px' }}>
+                      ORDER NOW
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+
+        {/* CTA */}
+        <div style={{ textAlign: 'center', marginTop: 50 }}>
+          <button className="btn-gold" onClick={() => scrollTo('contact')}>
+            <i className="fa-solid fa-book-open" /> View Full Menu
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Menu;
