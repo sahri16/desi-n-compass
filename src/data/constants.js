@@ -31,6 +31,7 @@ export const MENU_DATA = [
     category: 'Desi Specials',
     faIcon: 'fa-bowl-rice',
     items: [
+      { name: 'Karahi',  desc: 'Wok-tossed in tomatoes & fresh spices',         price: 'AED 85',  img: FOOD_IMAGES.karahi,    tag: "Chef's Pick" },
       { name: 'Chicken Karahi',  desc: 'Wok-tossed in tomatoes & fresh spices',         price: 'AED 85',  img: FOOD_IMAGES.karahi,    tag: "Chef's Pick" },
       { name: 'Mutton Handi',    desc: 'Slow-cooked in clay pot, aromatic gravy',        price: 'AED 120', img: FOOD_IMAGES.handi,     tag: 'Signature'   },
       { name: 'Dum Biryani',     desc: 'Fragrant basmati, saffron & whole spices',       price: 'AED 75',  img: FOOD_IMAGES.biryani,   tag: 'Bestseller'  },

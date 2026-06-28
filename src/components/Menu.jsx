@@ -5,20 +5,21 @@ import FullMenuPage from './FullMenuPage';
 import WhatsAppButton from "./WhatsAppButton";
 
 const Menu = () => {
-  const [activeTab, setActiveTab] = useState(0);
-  const [showFullMenu, setShowFullMenu] = useState(false);
+  const [activeTab,     setActiveTab]     = useState(0);
+  const [showFullMenu,  setShowFullMenu]  = useState(false);
   const [startCategory, setStartCategory] = useState(0);
 
-  // Open full menu starting from whichever tab is currently active
-  const openFullMenu = () => {
-    setStartCategory(activeTab);
+  const openFullMenu = (categoryIndex = activeTab) => {
+    setStartCategory(categoryIndex);
     setShowFullMenu(true);
     window.scrollTo({ top: 0 });
   };
 
+  // ── Sirf pehle 4 items dikhao ──
+  const visibleItems = MENU_DATA[activeTab].items.slice(0, 4);
+
   return (
     <>
-      {/* ── Full Menu Overlay ── */}
       {showFullMenu && (
         <FullMenuPage
           initialCategory={startCategory}
@@ -26,7 +27,6 @@ const Menu = () => {
         />
       )}
 
-      {/* ── Menu Section ── */}
       <section id="menu" className="section-pad" style={{ padding: '100px 60px', background: 'rgba(255,255,255,0.01)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
 
@@ -53,12 +53,12 @@ const Menu = () => {
             ))}
           </div>
 
-          {/* Cards Grid */}
+          {/* Cards Grid — sirf 4 */}
           <div
             className="menu-grid-4"
             style={{ display: 'grid', gridTemplateColumns: 'repeat(4,1fr)', gap: 20 }}
           >
-            {MENU_DATA[activeTab].items.map((item, i) => (
+            {visibleItems.map((item, i) => (
               <Reveal key={item.name} delay={i * 0.08}>
                 <div className="menu-card" style={{ height: '100%' }}>
 
@@ -113,7 +113,7 @@ const Menu = () => {
                       display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                     }}>
                       <div style={{ display: 'flex', gap: 2 }}>
-                        {[1, 2, 3, 4, 5].map(s => (
+                        {[1,2,3,4,5].map(s => (
                           <i key={s} className="fa-solid fa-star" style={{ color: COLORS.gold, fontSize: 10 }} />
                         ))}
                       </div>
@@ -128,9 +128,16 @@ const Menu = () => {
             ))}
           </div>
 
-          {/* CTA — opens Full Menu on same category */}
-          <div style={{ textAlign: 'center', marginTop: 50 }}>
-            <button className="btn-gold" onClick={openFullMenu}>
+          {/* Count hint + CTA */}
+          <div style={{ textAlign: 'center', marginTop: 40 }}>
+            <p style={{ color: 'rgba(255,255,255,0.3)', fontSize: 13, marginBottom: 18 }}>
+              Showing 4 of{' '}
+              <span style={{ color: COLORS.gold, fontWeight: 600 }}>
+                {MENU_DATA[activeTab].items.length}
+              </span>{' '}
+              dishes in {MENU_DATA[activeTab].category}
+            </p>
+            <button className="btn-gold" onClick={() => openFullMenu(activeTab)}>
               <i className="fa-solid fa-book-open" /> View Full Menu
             </button>
           </div>

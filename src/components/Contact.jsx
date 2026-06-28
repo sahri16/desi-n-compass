@@ -8,15 +8,15 @@ const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 const EMPTY = { name: '', email: '', phone: '', date: '', guests: '', msg: '' };
 
 const STATUS = {
-  IDLE:    'idle',
+  IDLE: 'idle',
   LOADING: 'loading',
   SUCCESS: 'success',
-  ERROR:   'error',
+  ERROR: 'error',
 };
 
 const Contact = () => {
-  const [form,      setForm]      = useState(EMPTY);
-  const [status,    setStatus]    = useState(STATUS.IDLE);
+  const [form, setForm] = useState(EMPTY);
+  const [status, setStatus] = useState(STATUS.IDLE);
   const [serverMsg, setServerMsg] = useState('');
 
   const set = (field) => (e) => setForm({ ...form, [field]: e.target.value });
@@ -27,10 +27,10 @@ const Contact = () => {
     setServerMsg('');
 
     try {
-      const res  = await fetch(`${API_URL}/api/contact`, {
-        method:  'POST',
+      const res = await fetch(`${API_URL}/api/contact`, {
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body:    JSON.stringify(form),
+        body: JSON.stringify(form),
       });
 
       const data = await res.json();
@@ -67,7 +67,7 @@ const Contact = () => {
         {/* Header */}
         <Reveal style={{ textAlign: 'center', marginBottom: 56 }}>
           <span className="section-badge">Get In Touch</span>
-          <h2 className ="section-title">
+          <h2 className="section-title">
             Contact <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Us</span>
           </h2>
           <div className="gold-line" style={{ margin: '18px auto' }} />
@@ -147,6 +147,9 @@ const Contact = () => {
                   disabled={isLoading}
                   value={form.date}
                   onChange={set('date')}
+                  style={{
+                    color: form.date ? "#fff" : "rgba(255,255,255,0.25)"
+                  }}
                 />
               </div>
 
@@ -155,7 +158,7 @@ const Contact = () => {
                 disabled={isLoading}
                 value={form.guests}
                 onChange={set('guests')}
-                style={{ appearance: 'none', cursor: 'pointer' }}
+                style={{ appearance: 'none', cursor: 'pointer', color: form.guests ? "#fff" : "rgba(255,255,255,0.25)" }}
               >
                 <option value="" disabled>Number of Guests</option>
                 {['1-2', '3-4', '5-6', '7-10', '10+'].map((g) => (

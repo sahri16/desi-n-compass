@@ -282,7 +282,11 @@ body {
 }
 .input-field::placeholder { color: rgba(255,255,255,0.25); }
 .input-field option { background: #1f1f1f; }
-
+.input-field::-webkit-calendar-picker-indicator {
+  filter: invert(78%) sepia(44%) saturate(727%) hue-rotate(356deg)
+          brightness(103%) contrast(91%);
+  cursor: pointer;
+}
 /* ── Social Buttons ── */
 .social-btn {
   width: 38px;
