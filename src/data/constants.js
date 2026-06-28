@@ -90,10 +90,10 @@ export const REVIEWS = [
 
 // ── Why Us ──
 export const WHY_US = [
-  { icon: 'fa-gem',              title: 'Premium Ingredients', desc: 'Hand-selected fresh produce from trusted farms and premium global suppliers.' },
-  { icon: 'fa-kitchen-set',         title: 'Master Chefs',        desc: 'Expert culinary team with decades of South Asian & international expertise.' },
-  { icon: 'fa-champagne-glasses',title: 'Luxury Ambience',     desc: 'Dubai-inspired fine dining blending modern elegance with warm heritage.' },
-  { icon: 'fa-compass',          title: 'Authentic Taste',     desc: 'Time-honoured recipes elevated with contemporary plating & innovation.' },
+  { icon: 'fa-gem',              title: 'Freshly Made to Order', desc: 'Every meal is prepared after you order, ensuring authentic taste, freshness, and quality in every bite.' },
+  { icon: 'fa-kitchen-set',         title: 'Diverse Global Flavors',        desc: 'From Pakistani and Indian favorites to BBQ, Arabic, Continental, Filipino, and Indo-Chinese cuisine, all in one destination.' },
+  { icon: 'fa-champagne-glasses',title: ' Authentic Desi Taste',     desc: 'Traditional recipes, premium spices, and home-style cooking come together to deliver unforgettable flavors.' },
+  { icon: 'fa-compass',          title: 'Warm Hospitality',     desc: 'A welcoming space where families, friends, and food lovers gather to enjoy great food and create lasting memories.' },
 ];
 
 // ── Nav Links ──

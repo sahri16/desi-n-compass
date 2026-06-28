@@ -36,6 +36,13 @@ function getTransporter() {
   });
 }
 
+// app.get("/api/test", (req, res) => {
+//   res.json({
+//     success: true,
+//     message: "Backend Working"
+//   });
+// });
+
 app.post('/api/contact', async (req, res) => {
   const { name, email, phone, date, guests, msg } = req.body;
 

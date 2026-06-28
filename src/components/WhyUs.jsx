@@ -10,7 +10,7 @@ const WhyUs = () => (
       <Reveal style={{ textAlign: 'center', marginBottom: 56 }}>
         <span className="section-badge">Our Promise</span>
         <h2 className="section-title">
-          Why Choose <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Us</span>
+          Why Choose <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Desi Compass</span>
         </h2>
         <div className="gold-line" style={{ margin: '18px auto' }} />
       </Reveal>

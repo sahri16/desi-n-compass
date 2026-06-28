@@ -16,26 +16,26 @@ const ReservationCTA = () => (
     }}
   >
     {/* Background Image */}
-  <div
-    style={{
-      position: 'absolute',
-      inset: 0,
-      backgroundImage: "url('/assets/pad.jpg')",
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      zIndex: 1,
-    }}
-  />
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        backgroundImage: "url('/assets/pad.jpg')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        zIndex: 1,
+      }}
+    />
 
-  {/* Black Overlay */}
-  <div
-    style={{
-      position: 'absolute',
-      inset: 0,
-      background: 'rgba(0,0,0,0.6)',
-      zIndex: 2,
-    }}
-  />
+    {/* Black Overlay */}
+    <div
+      style={{
+        position: 'absolute',
+        inset: 0,
+        background: 'rgba(0,0,0,0.6)',
+        zIndex: 2,
+      }}
+    />
     <GoldParticles />
 
     <div style={{ position: 'relative', zIndex: 5 }}>
@@ -49,7 +49,7 @@ const ReservationCTA = () => (
             color: COLORS.gold, textTransform: 'uppercase', borderRadius: 3,
           }}
         >
-          Reservations Open
+          Secure Your Seat
         </div>
 
         <h2 className="section-title" style={{ marginBottom: 18 }}>
@@ -58,7 +58,8 @@ const ReservationCTA = () => (
         </h2>
 
         <p style={{ color: 'rgba(255,255,255,0.45)', maxWidth: 420, margin: '0 auto 38px', lineHeight: 1.7, fontSize: 15 }}>
-          Experience the finest South Asian dining in Dubai. Reservations are highly recommended.
+          Experience the finest authentic Desi dining in Dubai at Desi Compass. Fresh Indian, Pakistani & fusion flavors in a warm, luxurious ambiance.
+          Reservations are highly recommended. Tables fill up fast.
         </p>
 
         <button

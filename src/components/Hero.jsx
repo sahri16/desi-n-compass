@@ -46,7 +46,7 @@ const Hero = () => (
         maxWidth: '800px',
         padding: '0 60px',
         paddingTop: '90px',
-        textAlign: 'center',
+        textAlign: 'left',
       }}
     >
       {/* Badge */}
@@ -74,13 +74,14 @@ const Hero = () => (
       <h1
         style={{
           fontFamily: "'Playfair Display', serif",
-          fontSize: 'clamp(42px, 7.5vw, 90px)',
+          fontSize: 'clamp(42px, 4.8vw, 90px)',
           fontWeight: 900, lineHeight: 1.0, color: '#fff',
           animation: 'heroIn 1s ease 0.5s both',
+          textAlign: 'left',
         }}
       >
-        Navigate Your<br />
-        <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Taste Journey</span>
+       Authentic Desi Flavors. <br />
+        <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Global Experiences</span>
       </h1>
 
       {/* Subheading */}
@@ -92,17 +93,16 @@ const Hero = () => (
           animation: 'heroIn 1s ease 0.75s both', fontWeight: 300,
         }}
       >
-        Authentic Desi Flavours. Global Experiences.<br />
-        Where South Asian heritage meets Dubai's finest dining.
+        Where timeless South Asian heritage meets Dubai’s most refined dining. Proudly partnered with our experts to deliver premium, authentic flavors that captivate your senses and warm your soul.
       </p>
 
       {/* Buttons */}
       <div className="hero-btns" style={{ display: 'flex', gap: 14, animation: 'heroIn 1s ease 1s both' }}>
         <button className="btn-gold" onClick={() => scrollTo('menu')}>
-          <i className="fa-solid fa-utensils" /> Explore Menu
+          <i className="fa-solid fa-utensils" /> Explore Our Menu
         </button>
         <button className="btn-outline" onClick={() => scrollTo('contact')}>
-          <i className="fa-regular fa-calendar" /> Reserve Table
+          <i className="fa-regular fa-calendar" /> Reserve Your Table
         </button>
       </div>
 

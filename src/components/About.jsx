@@ -78,22 +78,20 @@ const About = () => (
       <Reveal delay={0.2} style={{ flex: 1 }}>
         <span className="section-badge">Our Story</span>
         <h2 className="section-title">
-          Where Tradition<br />
-          <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Meets Discovery</span>
+          Where Every Direction<br />
+          <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Leads to Flavor</span>
         </h2>
         <div className="gold-line" />
         <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 20, fontWeight: 300 }}>
-          Desi Compass combines the rich, soul-stirring flavours of authentic South Asian cuisine
-          with the refinement of modern culinary artistry — a union born in the heart of Dubai.
+        Desi Compass was founded in March 2026 to bring authentic Desi flavors and global cuisines together under one roof. Inspired by the meaning of a 360° compass, we offer a journey through Indian, Pakistani, Indo-Chinese, Filipino, Continental, Arabic, and BBQ specialties.
         </p>
         <p style={{ color: 'rgba(255,255,255,0.45)', lineHeight: 1.9, fontSize: 15, fontWeight: 300 }}>
-          Inspired by the compass in our identity, every dish represents a new direction of taste,
-          culture, and memory. Navigate flavours that span continents, yet feel unmistakably home.
+         Every dish is freshly prepared to order using premium ingredients and traditional recipes, delivering the true taste of home with every bite.
         </p>
 
         {/* Stats */}
         <div style={{ display: 'flex', gap: 40, marginTop: 40 }}>
-          {[['500+', 'Signature Dishes'], ['15+', 'Expert Chefs'], ['50K+', 'Happy Guests']].map(([num, label]) => (
+          {[['100+', 'SIGNATURE DISHES'], ['10+', 'GLOBAL CUISINE STYLES'], ['100%', 'FRESHLY MADE TO ORDER']].map(([num, label]) => (
             <div key={label}>
               <div
                 style={{
