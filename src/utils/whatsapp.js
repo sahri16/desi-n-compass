@@ -1,7 +1,7 @@
-const WHATSAPP_NUMBER = "923074244584";
+const WHATSAPP_NUMBER = "971552214549";
 
 export const orderOnWhatsApp = (item, categoryName) => {
-  const message = `DESI N COMPASS — Order Request
+  const message = `DESI COMPASS — Order Request
 
 Dish: ${item.name}
 Category: ${categoryName}

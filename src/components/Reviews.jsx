@@ -4,11 +4,16 @@ import { COLORS, REVIEWS } from '../data/constants';
 
 const Reviews = () => {
   const [idx, setIdx] = useState(0);
+const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const t = setInterval(() => setIdx((i) => (i + 1) % REVIEWS.length), 5000);
     return () => clearInterval(t);
   }, []);
+
+useEffect(() => {
+  setExpanded(false);
+}, [idx]);
 
   const review = REVIEWS[idx];
 
@@ -39,16 +44,59 @@ const Reviews = () => {
             className="fa-solid fa-quote-left"
             style={{ color: COLORS.gold, fontSize: 36, opacity: 0.3, marginBottom: 20, display: 'block' }}
           />
-          <p
-            style={{
-              fontFamily: "'Playfair Display',serif",
-              fontSize: 18, lineHeight: 1.8,
-              color: 'rgba(255,255,255,0.82)',
-              fontStyle: 'italic', marginBottom: 28,
-            }}
-          >
-            {review.text}
-          </p>
+         <p
+  style={{
+    fontFamily: "'Playfair Display',serif",
+    fontSize: 18,
+    lineHeight: 1.8,
+    color: "rgba(255,255,255,0.82)",
+    fontStyle: "italic",
+    marginBottom: 28,
+  }}
+>
+  <span
+    style={{
+      display: "-webkit-inline-box",
+      WebkitBoxOrient: "vertical",
+      WebkitLineClamp: expanded ? "unset" : 3,
+      overflow: "hidden",
+    }}
+  >
+    {review.text}
+  </span>
+
+  {!expanded && review.text.length > 120 && (
+    <>
+      {" "}
+      ...
+      <span
+        onClick={() => setExpanded(true)}
+        style={{
+          color: COLORS.gold,
+          cursor: "pointer",
+          fontWeight: 600,
+          marginLeft: 6,
+        }}
+      >
+        Read More
+      </span>
+    </>
+  )}
+
+  {expanded && (
+    <span
+      onClick={() => setExpanded(false)}
+      style={{
+        color: COLORS.gold,
+        cursor: "pointer",
+        fontWeight: 600,
+        marginLeft: 8,
+      }}
+    >
+      Read Less
+    </span>
+  )}
+</p>
 
           {/* Stars */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: 3, marginBottom: 20 }}>
@@ -73,9 +121,7 @@ const Reviews = () => {
               <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 16, fontWeight: 600, color: '#fff' }}>
                 {review.name}
               </div>
-              <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12, letterSpacing: '1px', marginTop: 2 }}>
-                {review.role.toUpperCase()}
-              </div>
+              
             </div>
           </div>
         </div>

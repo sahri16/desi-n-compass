@@ -83,18 +83,19 @@ export const GALLERY_IMAGES = [
 
 // ── Reviews ──
 export const REVIEWS = [
-  { name: 'Ahmed Al Rashidi', role: 'Food Critic, Dubai',    avatar: 'AA', stars: 5, text: 'An extraordinary journey through South Asian flavours presented with Michelin-level finesse. Every dish tells a story of heritage and craft.' },
-  { name: 'Sophia Laurent',   role: 'Travel Blogger',        avatar: 'SL', stars: 5, text: 'Desi Compass is the definition of Dubai luxury dining. The ambience, service, and food exceeded every expectation I had.' },
-  { name: 'Ravi Menon',       role: 'Corporate Executive',   avatar: 'RM', stars: 5, text: "I've dined across the globe. Rarely do you find a place that nails both authenticity and innovation. A rare gem in Dubai." },
-  { name: 'Fatima Al Zaabi',  role: 'Lifestyle Influencer',  avatar: 'FZ', stars: 5, text: 'The Lamb Chops and Malai Boti are absolutely divine. The gold-lit interior feels like a palace. Will return again and again.' },
+  { name: 'Shaheer Zaki', avatar: 'SZ', stars: 4, text: 'Recently visited Desi Compass and had a really pleasant experience. The environment and ambiance were excellent , very comfortable, clean, and enjoyable for dining with family or friends. We ordered a chicken wrap and orange juice, and both tasted really good. The chicken wrap was fresh, flavorful, and well-prepared, while the orange juice was refreshing and perfectly balanced. The highlight of the visit was definitely the papdi chaat. It was absolutely delicious, full of flavor, and very well presented. The plate size was quite large, which looked impressive, but the quantity served was a bit less. It would be even better if they increased the portion size. The mango lassi, however, was slightly disappointing. It tasted more like artificial mango flavoring rather than fresh mango, so it did not feel very authentic. Overall, it was a good experience with tasty food, a beautiful atmosphere, and friendly vibes. Definitely a nice place to visit, especially for desi food lovers.' },
+
+  { name: 'Anne',   avatar: 'AN', stars: 5, text: 'The ambiance is awesome and the food is very tasty. From the moment we arrived, we felt welcomed by the friendly staff. The restaurant has a beautiful and cozy atmosphere, and the quality of the food exceeded our expectations. We appreciate the good service and the effort of the team. We will surely recommend this place to others and visit again soon.' },
+  { name: 'Jasmeen Kaur',    avatar: 'JK', stars: 5, text: "Food was so good. I find my home food here. Best best north indian food. In barsha this is my first time I find so good food. Recommend to all visit to Desi compas" },
+  { name: 'Raymond Selwyn',   avatar: 'RS', stars: 3, text: 'I ordered the Paneer Butter Masala and it was absolutely delicious. The taste and texture of the food were excellent and very satisfying. The ambience was pleasant and comfortable, making the dining experience even better. The staff served with a warm smile and provided great service throughout. I also appreciated the complimentary drink that was served. Overall, it was a wonderful experience and I would definitely visit again. Will try non veg..it was really tempting.' },
 ];
 
 // ── Why Us ──
 export const WHY_US = [
-  { icon: 'fa-gem',              title: 'Freshly Made to Order', desc: 'Every meal is prepared after you order, ensuring authentic taste, freshness, and quality in every bite.' },
-  { icon: 'fa-kitchen-set',         title: 'Diverse Global Flavors',        desc: 'From Pakistani and Indian favorites to BBQ, Arabic, Continental, Filipino, and Indo-Chinese cuisine, all in one destination.' },
-  { icon: 'fa-champagne-glasses',title: ' Authentic Desi Taste',     desc: 'Traditional recipes, premium spices, and home-style cooking come together to deliver unforgettable flavors.' },
-  { icon: 'fa-compass',          title: 'Warm Hospitality',     desc: 'A welcoming space where families, friends, and food lovers gather to enjoy great food and create lasting memories.' },
+  { icon: 'fa-kitchen-set',              title: 'Freshly Made to Order', desc: 'Every meal is prepared after your order, ensuring authentic taste, freshness, and quality taste in every bite. ' },
+  { icon: 'fa-solid fa-earth-americas',         title: 'Diverse Global Flavors',        desc: 'From Pakistani and Indian favorites to BBQ, Arabic, Continental, Filipino, and Indo-Chinese cuisine, all in one destination.' },
+  { icon: 'fa-solid fa-pepper-hot',title: ' Authentic Desi Taste',     desc: 'Traditional recipes, premium spices, and home-style cooking come together to deliver unforgettable flavors.' },
+  { icon: 'fa-solid fa-heart',          title: 'Warm Hospitality',     desc: 'A welcoming space where families, friends, and food lovers gather to enjoy great food and create lasting memories.' },
 ];
 
 // ── Nav Links ──
@@ -107,16 +108,16 @@ export const NAV_LINKS = [
 
 // ── Contact Info ──
 export const CONTACT_INFO = [
-  { icon: 'fa-location-dot', label: 'Location', value: 'Dubai, United Arab Emirates' },
-  { icon: 'fa-envelope',     label: 'Email',    value: 'info@desincompass.com'        },
-  { icon: 'fa-phone',        label: 'Phone',    value: '+971 50 XXX XXXX'             },
-  { icon: 'fa-clock',        label: 'Hours',    value: 'Daily 12:00 PM – 12:00 AM'   },
+  { icon: 'fa-location-dot', label: 'Location', value: 'B8 Building - Al Barsha First - Al Barsha - Dubai' },
+  { icon: 'fa-envelope',     label: 'Email',    value: 'desicompass1@gmail.com'        },
+  { icon: 'fa-phone',        label: 'Phone',    value: '+97155 221 4549'             },
+  { icon: 'fa-clock',        label: 'Hours',    value: 'Daily 7:00 AM – 2:00 AM'   },
 ];
 
 // ── Social Links ──
 export const SOCIAL_LINKS = [
-  { icon: 'fa-brands fa-instagram', href: '#', label: 'Instagram' },
-  { icon: 'fa-brands fa-facebook-f',href: '#', label: 'Facebook'  },
-  { icon: 'fa-brands fa-tiktok',    href: '#', label: 'TikTok'    },
-  { icon: 'fa-brands fa-whatsapp',  href: '#', label: 'WhatsApp'  },
+  { icon: 'fa-brands fa-instagram', href: ' https://www.instagram.com/desi.compass/', label: 'Instagram' },
+  { icon: 'fa-brands fa-facebook-f',href: ' https://www.facebook.com/desicompass/', label: 'Facebook'  },
+  { icon: 'fa-brands fa-tiktok',    href: ' https://www.tiktok.com/@desicompass_restaurant?_r=1&_t=ZS-97aDjRZjMyD', label: 'TikTok'    },
+  { icon: 'fa-brands fa-whatsapp',  href: ' https://wa.me/971552214549', label: 'WhatsApp'  },
 ];

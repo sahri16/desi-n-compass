@@ -10,11 +10,14 @@ import ReservationCTA from './components/ReservationCTA';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Breadcrumbs from './components/Breadcrumbs';
+import WhatsAppFloat from './components/WhatsAppFloat';
+import CustomCursor from './components/CustomCursor';
 
 function App() {
   return (
     <div style={{ background: '#0a0a0a', color: '#fff', overflowX: 'hidden' }}>
       <Navbar />
+      <CustomCursor />
       <Breadcrumbs />
       <section id="hero">
         <Hero />
@@ -41,6 +44,7 @@ function App() {
         <Contact />
       </section>
       <Footer />
+      <WhatsAppFloat />
     </div>
   );
 }
