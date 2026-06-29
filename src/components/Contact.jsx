@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Reveal from './Reveal';
 import { COLORS, CONTACT_INFO, SOCIAL_LINKS } from '../data/constants';
 
-// Backend URL — production mein apna URL daalein
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+// Use a relative path so Vite can proxy /api to the Express server in development.
+const API_URL = import.meta.env.VITE_API_URL || '';
 
 const EMPTY = { name: '', email: '', phone: '', date: '', guests: '', msg: '' };
 
@@ -260,7 +260,7 @@ const Contact = () => {
       {/* ── Google Map ── */}
       <div style={{ height: '80vh', position: 'relative', overflow: 'hidden' }}>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1803.5288967737297!2d55.38406941998938!3d25.30226226629084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c0c7077b7e5%3A0x3e3e2454151459a8!2sAl%20Yarmook%20C!5e0!3m2!1sen!2s!4v1782291154098!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3612.658862774137!2d55.200433174077595!3d25.113406635091938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b9525409653%3A0xc0a0a7e1d1ea2481!2sB8%20Building%20-%20Al%20Barsha%20First%20-%20Al%20Barsha%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2s!4v1782641047082!5m2!1sen!2s"
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }}
           loading="lazy"
           title="Desi Compass Location"

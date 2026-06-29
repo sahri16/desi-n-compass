@@ -117,7 +117,8 @@ export const CONTACT_INFO = [
 // ── Social Links ──
 export const SOCIAL_LINKS = [
   { icon: 'fa-brands fa-instagram', href: ' https://www.instagram.com/desi.compass/', label: 'Instagram' },
-  { icon: 'fa-brands fa-facebook-f',href: ' https://www.facebook.com/desicompass/', label: 'Facebook'  },
+  { icon: 'fa-brands fa-facebook-f',href: ' https://www.facebook.com/desicompass', label: 'Facebook'  },
   { icon: 'fa-brands fa-tiktok',    href: ' https://www.tiktok.com/@desicompass_restaurant?_r=1&_t=ZS-97aDjRZjMyD', label: 'TikTok'    },
   { icon: 'fa-brands fa-whatsapp',  href: ' https://wa.me/971552214549', label: 'WhatsApp'  },
 ];
+  
