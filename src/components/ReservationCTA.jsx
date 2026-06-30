@@ -67,7 +67,7 @@ const ReservationCTA = () => (
           style={{ padding: '15px 50px', fontSize: 13, animation: 'goldGlow 2.5s infinite' }}
           onClick={() => scrollTo('contact')}
         >
-          <i className="fa-solid fa-calendar-check" /> Book Now
+          <i className="fa-brands fa-whatsapp" /> Whatsapp Now
         </button>
       </Reveal>
     </div>
