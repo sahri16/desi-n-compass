@@ -137,9 +137,11 @@ const Menu = () => {
               </span>{' '}
               dishes in {MENU_DATA[activeTab].category}
             </p>
-            <button className="btn-gold" onClick={() => openFullMenu(activeTab)}>
+            {/* <button className="btn-gold" 
+            onClick={() => openFullMenu(activeTab)}
+            >
               <i className="fa-solid fa-book-open" /> View Full Menu
-            </button>
+            </button> */}
           </div>
 
         </div>

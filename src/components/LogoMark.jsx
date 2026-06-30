@@ -9,12 +9,11 @@ const LogoMark = ({ size = 'md' }) => {
         style={{
           width: sm ? 36 : 46,
           height: sm ? 36 : 46,
-          border: `1.5px solid ${COLORS.gold}`,
+          // border: `1.5px solid ${COLORS.gold}`,
           borderRadius: '50%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'rgba(242,187,60,0.06)',
         }}
       >
         
