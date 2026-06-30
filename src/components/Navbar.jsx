@@ -6,7 +6,7 @@ const scrollTo = (id) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 };
 
-const Navbar = () => {
+const Navbar = ({ onNavigateMenu }) => {
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
@@ -59,10 +59,10 @@ const Navbar = () => {
         <button
           className="btn-gold nav-btn"
           style={{ padding: '13px 34px', fontSize: '11px' }}
-          onClick={() => scrollTo('contact')}
+          onClick={onNavigateMenu}
         >
-          <i className="fa-solid fa-calendar-check" />
-          Reserve Table
+          <i className="fa-solid fa-utensils" />
+         Explore more Menu
         </button>
 
         {/* Hamburger */}

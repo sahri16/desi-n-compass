@@ -1,32 +1,16 @@
 import React, { useState } from 'react';
 import Reveal from './Reveal';
 import { COLORS, MENU_DATA } from '../data/constants';
-import FullMenuPage from './FullMenuPage';
 import WhatsAppButton from "./WhatsAppButton";
 
-const Menu = () => {
-  const [activeTab,     setActiveTab]     = useState(0);
-  const [showFullMenu,  setShowFullMenu]  = useState(false);
-  const [startCategory, setStartCategory] = useState(0);
-
-  const openFullMenu = (categoryIndex = activeTab) => {
-    setStartCategory(categoryIndex);
-    setShowFullMenu(true);
-    window.scrollTo({ top: 0 });
-  };
+const Menu = ({ openFullMenu }) => {
+  const [activeTab, setActiveTab] = useState(0);
 
   // ── Sirf pehle 4 items dikhao ──
   const visibleItems = MENU_DATA[activeTab].items.slice(0, 4);
 
   return (
     <>
-      {showFullMenu && (
-        <FullMenuPage
-          initialCategory={startCategory}
-          onClose={() => setShowFullMenu(false)}
-        />
-      )}
-
       <section id="menu" className="section-pad" style={{ padding: '100px 60px', background: 'rgba(255,255,255,0.01)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
 
@@ -137,11 +121,11 @@ const Menu = () => {
               </span>{' '}
               dishes in {MENU_DATA[activeTab].category}
             </p>
-            {/* <button className="btn-gold" 
+            <button className="btn-gold" 
             onClick={() => openFullMenu(activeTab)}
             >
               <i className="fa-solid fa-book-open" /> View Full Menu
-            </button> */}
+            </button>
           </div>
 
         </div>

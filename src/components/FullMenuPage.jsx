@@ -206,7 +206,7 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
               <i className="fa-solid fa-chevron-down" style={{ fontSize: 10 }} />
             </button>
             <button className="fm-reserve-btn" onClick={goToContact}>
-              <i className="fa-solid fa-calendar-check" /> Reserve
+              <i className="fa-solid fa-calendar-check" /> Contact Us
             </button>
           </div>
         </div>

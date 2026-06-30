@@ -102,7 +102,7 @@ const Hero = () => (
           <i className="fa-solid fa-utensils" /> Explore Our Menu
         </button>
         <button className="btn-outline" onClick={() => scrollTo('contact')}>
-          <i className="fa-regular fa-calendar" /> Reserve Your Table
+          <i className="fa-regular fa-calendar" /> Contact US
         </button>
       </div>
 
