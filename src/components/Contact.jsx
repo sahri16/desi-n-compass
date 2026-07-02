@@ -62,7 +62,7 @@ const Contact = () => {
 
   return (
     <section id="contact" className="section-pad" style={{ background: 'rgba(255,255,255,0.01)' }}>
-      <div style={{ maxWidth: '1200px', padding: '100px 60px', margin: '0 auto' }}>
+      <div className='contact-2nd' style={{ maxWidth: '1200px', padding: '100px 60px', margin: '0 auto' }}>
 
         {/* Header */}
         <Reveal style={{ textAlign: 'center', marginBottom: 56 }}>

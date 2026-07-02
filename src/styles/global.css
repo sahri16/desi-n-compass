@@ -352,6 +352,9 @@ body {
   .copyright {
     text-align: center;
 }
+.contact-2nd{
+  padding: 0 !important;
+}
 }
 @media (max-width: 480px) {
   .why-grid-4 { grid-template-columns: 1fr !important; }

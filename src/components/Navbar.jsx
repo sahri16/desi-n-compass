@@ -62,7 +62,7 @@ const Navbar = ({ onNavigateMenu }) => {
           onClick={onNavigateMenu}
         >
           <i className="fa-solid fa-utensils" />
-         Explore more Menu
+         Explore Our Menu
         </button>
 
         {/* Hamburger */}
