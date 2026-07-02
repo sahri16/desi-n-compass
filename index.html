@@ -1,127 +1,223 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/src/assets/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Desi Compass — Dubai's premium dining destination. Authentic South Asian flavors meet modern culinary craft. Navigate your taste journey." />
-    <meta name="theme-color" content="#1A0F10" />
-    <title>Desi Compass | Navigate Your Taste Journey — Dubai</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
-    
-    <!-- Sitemap & Robots -->
-    <link rel="sitemap" href="/sitemap.xml" type="application/xml" />
-    
-    <!-- Schema Markup - Organization -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Desi Compass",
-        "alternateName": "Desi Compass Restaurant Dubai",
-        "url": "https://desicompass.ae",
-        "description": "Premium South Asian dining destination in Dubai. Authentic flavors meet modern culinary craft.",
-        "image": "https://desicompass.ae/src/assets/logo.png",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Dubai, UAE",
-          "addressLocality": "Dubai",
-          "addressCountry": "AE"
-        },
-        "sameAs": [
-          "https://www.facebook.com/desicompass",
-          "https://www.instagram.com/desicompass",
-          "https://www.tiktok.com/@desicompass"
-        ]
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/src/assets/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Desi Compass — Dubai's premium dining destination. Authentic South Asian flavors meet modern culinary craft. Navigate your taste journey." />
+  <meta name="theme-color" content="#1A0F10" />
+  <title>Desi Compass | Navigate Your Taste Journey — Dubai</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+
+  <!-- Sitemap & Robots -->
+  <link rel="sitemap" href="/sitemap.xml" type="application/xml" />
+
+  <!-- ========================= -->
+  <!-- Restaurant Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "@id": "https://desicompass.ae/#restaurant",
+  "name": "Desi Compass",
+  "url": "https://desicompass.ae/",
+  "logo": "https://desicompass.ae/logo.png",
+  "image": [
+    "https://desicompass.ae/hero.jpg"
+  ],
+  "description": "Desi Compass is a premium Pakistani and Indian restaurant in Dubai offering authentic South Asian cuisine with a modern dining experience.",
+  "servesCuisine": [
+    "Pakistani",
+    "Indian",
+    "South Asian"
+  ],
+  "priceRange": "$$",
+  "telephone": "+971552214549",
+  "email": "desicompass1@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "B8 Building - Al Barsha First - Al Barsha",
+    "addressLocality": "Dubai",
+    "addressCountry": "AE"
+  },
+  "sameAs": [
+    "https://www.facebook.com/desicompass",
+    "https://www.instagram.com/desi.compass/",
+    "https://www.tiktok.com/@desicompass_restaurant?_r=1&_t=ZS-97aDjRZjMyD"
+  ]
+}
+</script>
+
+  <!-- ========================= -->
+  <!-- Organization Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Desi Compass",
+  "url":"https://desicompass.ae/",
+  "logo":"https://desicompass.ae/logo.png",
+  "description":"Premium South Asian restaurant in Dubai."
+}
+</script>
+
+  <!-- ========================= -->
+  <!-- Website Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "url":"https://desicompass.ae/",
+  "name":"Desi Compass",
+  "potentialAction":{
+    "@type":"SearchAction",
+    "target":"https://desicompass.ae/search?q={search_term_string}",
+    "query-input":"required name=search_term_string"
+  }
+}
+</script>
+
+  <!-- ========================= -->
+  <!-- Breadcrumb Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {
+      "@type":"ListItem",
+      "position":1,
+      "name":"Home",
+      "item":"https://desicompass.ae/"
+    }
+  ]
+}
+</script>
+
+  <!-- ========================= -->
+  <!-- FAQ Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Do you serve Halal food?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes, all our food is 100% Halal."
       }
-    </script>
-
-    <!-- Schema Markup - Restaurant -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Restaurant",
-        "name": "Desi Compass",
-        "image": "https://desicompass.ae/src/assets/logo.png",
-        "description": "Premium South Asian dining destination in Dubai serving authentic desi cuisine",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Dubai, UAE",
-          "addressLocality": "Dubai",
-          "addressCountry": "AE"
-        },
-        "priceRange": "AED 50 - AED 200",
-        "cuisines": ["South Asian", "Indian", "Pakistani", "Bangladeshi"],
-        "telephone": "+971-XXXX-XXXX",
-        "url": "https://desicompass.ae",
-        "servesCuisine": ["Indian", "Pakistani", "South Asian"],
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.8",
-          "reviewCount": "250",
-          "bestRating": "5",
-          "worstRating": "1"
-        }
+    },
+    {
+      "@type":"Question",
+      "name":"Do you offer dine-in and takeaway?",
+      "acceptedAnswer":{
+        "@type":"Answer",
+        "text":"Yes, we offer dine-in, takeaway and delivery."
       }
-    </script>
+    }
+  ]
+}
+</script>
 
-    <!-- Schema Markup - BreadcrumbList -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://desicompass.ae"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Menu",
-            "item": "https://desicompass.ae/#menu"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "About Us",
-            "item": "https://desicompass.ae/#about"
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "name": "Contact",
-            "item": "https://desicompass.ae/#contact"
-          }
-        ]
-      }
-    </script>
+  <!-- ========================= -->
+  <!-- Menu Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Menu",
+  "name":"Desi Compass Menu"
+}
+</script>
 
-    <!-- Additional SEO Meta Tags -->
-    <meta name="keywords" content="Desi Compass, South Asian restaurant Dubai, Indian food, Pakistani food, authentic dining, premium restaurant UAE" />
-    <meta name="author" content="Desi Compass" />
-    <meta property="og:title" content="Desi Compass | Navigate Your Taste Journey — Dubai" />
-    <meta property="og:description" content="Desi Compass — Dubai's premium dining destination. Authentic South Asian flavors meet modern culinary craft. Navigate your taste journey." />
-    <meta property="og:image" content="https://desicompass.ae/src/assets/logo.png" />
-    <meta property="og:url" content="https://desicompass.ae" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Desi Compass | Navigate Your Taste Journey — Dubai" />
-    <meta name="twitter:description" content="Premium South Asian dining. Authentic flavors meet modern culinary craft." />
-    <meta name="twitter:image" content="https://desicompass.ae/src/assets/logo.png" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="language" content="English" />
-    <meta name="revisit-after" content="7 days" />
-    
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <!-- ========================= -->
+  <!-- Contact Page Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ContactPage",
+  "url":"https://desicompass.ae/contact"
+}
+</script>
+
+  <!-- ========================= -->
+  <!-- About Page Schema -->
+  <!-- ========================= -->
+  <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"AboutPage",
+  "url":"https://desicompass.ae/about"
+}
+</script>
+
+
+  <!-- Canonical -->
+<link rel="canonical" href="https://desicompass.ae/" />
+
+<!-- Primary SEO -->
+<title>Desi Compass | Best Pakistani & Indian Restaurant in Dubai</title>
+
+<meta name="title" content="Desi Compass | Best Pakistani & Indian Restaurant in Dubai" />
+
+<meta name="description"
+  content="Experience authentic Pakistani and Indian cuisine at Desi Compass in Dubai. Enjoy premium halal dining, traditional flavors, family-friendly ambiance, takeaway, and delivery." />
+
+<meta name="keywords"
+  content="Desi Compass, Desi Compass Dubai, Pakistani Restaurant Dubai, Indian Restaurant Dubai, South Asian Restaurant Dubai, Best Restaurant Dubai, Halal Restaurant Dubai, Family Restaurant Dubai, Fine Dining Dubai, Authentic Pakistani Food, Authentic Indian Food, Desi Food Dubai, Traditional Pakistani Cuisine, Traditional Indian Cuisine, Premium Dining Dubai, Halal Food Dubai, Dine-In Dubai, Takeaway Dubai, Food Delivery Dubai, Best Pakistani Restaurant UAE, Best Pakistani restaurant in Dubai, Best Indian restaurant in Dubai, Authentic halal food in Dubai, South Asian dining experience, Family-friendly restaurant in Dubai, Traditional Pakistani cuisine, Authentic Indian flavors, Premium halal dining" />
+
+<meta name="author" content="Desi Compass" />
+<meta name="robots"
+  content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+<meta name="language" content="English" />
+<meta name="revisit-after" content="7 days" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Desi Compass" />
+<meta property="og:title"
+  content="Desi Compass | Best Pakistani & Indian Restaurant in Dubai" />
+<meta property="og:description"
+  content="Experience authentic Pakistani and Indian cuisine at Desi Compass in Dubai. Premium halal dining, takeaway, delivery and family-friendly atmosphere." />
+<meta property="og:url" content="https://desicompass.ae/" />
+<meta property="og:image" content="https://desicompass.ae/logo.png" />
+<meta property="og:image:alt"
+  content="Desi Compass Pakistani & Indian Restaurant Dubai" />
+<meta property="og:locale" content="en_AE" />
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title"
+  content="Desi Compass | Best Pakistani & Indian Restaurant in Dubai" />
+<meta name="twitter:description"
+  content="Experience authentic Pakistani and Indian cuisine at Desi Compass in Dubai. Premium halal dining, takeaway and delivery." />
+<meta name="twitter:image" content="https://desicompass.ae/logo.png" />
+
+<!-- Theme -->
+<meta name="theme-color" content="#1A0F10" />
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

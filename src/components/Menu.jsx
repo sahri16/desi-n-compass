@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from "react-helmet-async";
 import Reveal from './Reveal';
 import { COLORS, MENU_DATA } from '../data/constants';
 import WhatsAppButton from "./WhatsAppButton";
@@ -11,6 +12,42 @@ const Menu = ({ openFullMenu }) => {
 
   return (
     <>
+      <Helmet>
+    <title>Desi Compass Menu | Authentic Pakistani & Indian Dishes</title>
+
+    <meta
+      name="description"
+      content="Browse the Desi Compass menu featuring authentic Pakistani and Indian dishes, BBQ, biryani, curries, fresh breads, desserts, and refreshing beverages in Dubai."
+    />
+
+    <meta
+      name="keywords"
+      content="Desi Compass Menu, Pakistani Food Menu Dubai, Indian Food Menu Dubai, Restaurant Menu Dubai, Halal Food Menu, BBQ Menu Dubai, Biryani Dubai, Karahi Dubai, Curry Menu, Tandoori Menu, Fresh Naan, South Asian Cuisine, Pakistani Cuisine, Indian Cuisine, Family Dining Dubai, Authentic Halal Food, Best Restaurant Menu Dubai, Traditional Food Dubai, Premium Dining Menu, Desi Food Menu"
+    />
+
+    <link rel="canonical" href="https://desicompass.ae/menu" />
+
+    <meta property="og:title" content="Desi Compass Menu | Authentic Pakistani & Indian Dishes" />
+
+    <meta
+      property="og:description"
+      content="Browse authentic Pakistani & Indian dishes at Desi Compass Dubai."
+    />
+
+    <meta property="og:url" content="https://desicompass.ae/menu" />
+
+    <meta property="og:image" content="https://desicompass.ae/menu-banner.jpg" />
+
+    <script type="application/ld+json">
+      {JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Menu",
+        name: "Desi Compass Menu",
+        url: "https://desicompass.ae/menu"
+      })}
+    </script>
+  </Helmet>
+  
       <section id="menu" className="section-pad" style={{ padding: '100px 60px', background: 'rgba(255,255,255,0.01)' }}>
         <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
 

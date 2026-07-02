@@ -61,8 +61,8 @@ const Contact = () => {
   const isLoading = status === STATUS.LOADING;
 
   return (
-    <section id="contact" className="section-pad" style={{ background: 'rgba(255,255,255,0.01)' }}>
-      <div className='contact-2nd' style={{ maxWidth: '1200px', padding: '100px 60px', margin: '0 auto' }}>
+    <section id="contact"  style={{ background: 'rgba(255,255,255,0.01)' }}>
+      <div className='section-pad' style={{ maxWidth: '1200px', padding: '100px 60px', margin: '0 auto' }}>
 
         {/* Header */}
         <Reveal style={{ textAlign: 'center', marginBottom: 56 }}>
