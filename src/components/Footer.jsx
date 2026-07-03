@@ -2,13 +2,38 @@ import React from 'react';
 import LogoMark from './LogoMark';
 import { COLORS, SOCIAL_LINKS } from '../data/constants';
 
-const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+const handleNavClick = (id) => {
+  // If the user clicks 'Blog', navigate to the blog route instead of scrolling
+  if (id === 'blog') {
+    window.history.pushState({}, '', '/blog');
+    window.dispatchEvent(new PopStateEvent('popstate'));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+
+  // Check if we are currently on the Home page
+  const isHomePage = window.location.pathname === '/';
+
+  if (isHomePage) {
+    // Scroll smoothly if already on the homepage
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    // If on the blog page, go home first, then scroll to the section
+    window.history.pushState({}, '', '/');
+    window.dispatchEvent(new PopStateEvent('popstate'));
+
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }, 100);
+  }
+};
 
 const NAV_COLS = [
   {
     title: 'Navigation',
     links: [
       { label: 'Home',    id: 'home'    },
+      { label: 'Blog',    id: 'blog'    }, // Handles URL route navigation now
       { label: 'Menu',    id: 'menu'    },
       { label: 'Gallery', id: 'gallery' },
       { label: 'Contact', id: 'contact' },
@@ -33,7 +58,7 @@ const Footer = () => (
     >
       {/* Brand */}
       <div style={{ maxWidth: 260 }}>
-        <div onClick={() => scrollTo('home')} style={{ cursor: 'pointer' }}>
+        <div onClick={() => handleNavClick('home')} style={{ cursor: 'pointer' }}>
           <LogoMark />
         </div>
         <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, lineHeight: 1.8, marginTop: 16, fontWeight: 300 }}>
@@ -57,7 +82,7 @@ const Footer = () => (
           {col.links.map((link) => (
             <div
               key={link.label}
-              onClick={() => scrollTo(link.id)}
+              onClick={() => handleNavClick(link.id)} // Using the smart handler here
               style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, marginBottom: 10, cursor: 'pointer', fontWeight: 300, transition: 'color 0.2s' }}
               onMouseEnter={(e) => (e.target.style.color = COLORS.gold)}
               onMouseLeave={(e) => (e.target.style.color = 'rgba(255,255,255,0.6)')}
