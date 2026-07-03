@@ -1,26 +1,30 @@
-# Robots.txt for Desi Compass Restaurant
-# Updated: 2026-06-27
 
-# Allow all robots
+
 User-agent: *
 Allow: /
-Disallow: /admin
-Disallow: /private
-Disallow: /*.json$
-Disallow: /node_modules
 
-# Specific crawlers
+Disallow: /admin/
+Disallow: /private/
+
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 User-agent: Bingbot
 Allow: /
-Crawl-delay: 1
 
-User-agent: Slurp
+User-agent: GPTBot
 Allow: /
-Crawl-delay: 1
 
-# Sitemap location
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://desicompass.ae/sitemap.xml

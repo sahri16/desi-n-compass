@@ -46,8 +46,8 @@ useEffect(() => {
           />
          <p
   style={{
-    fontFamily: "'Playfair Display',serif",
-    fontSize: 18,
+    fontFamily: "'Inter', sans-serif",
+    fontSize: 16,
     lineHeight: 1.8,
     color: "rgba(255,255,255,0.82)",
     fontStyle: "italic",

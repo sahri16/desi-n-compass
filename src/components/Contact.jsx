@@ -98,14 +98,7 @@ const Contact = () => {
               </div>
             ))}
 
-            {/* Socials */}
-            <div style={{ display: 'flex', gap: 10, marginTop: 24 }}>
-              {SOCIAL_LINKS.map((s) => (
-                <a key={s.label} href={s.href} className="social-btn" aria-label={s.label}>
-                  <i className={s.icon} />
-                </a>
-              ))}
-            </div>
+      
           </Reveal>
 
           {/* ── Right — Form ── */}

@@ -76,8 +76,8 @@ const Footer = () => (
         {[
           { icon: 'fa-location-dot', text: 'B8 Building - Al Barsha First - Al Barsha - Dubai' },
           { icon: 'fa-envelope',     text: 'desicompass1@gmail.com' },
-          { icon: 'fa-phone',        text: '+97155 221 4549' },
-          { icon: 'fa-clock',        text: 'Daily 12 PM – 12 AM' },
+          { icon: 'fa-phone',        text: '+971 55 221 4549' },
+          { icon: 'fa-clock',        text: 'Daily 07:00 AM – 02:00 AM' },
         ].map((c) => (
           <div key={c.text} style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 12 }}>
             <i className={`fa-solid ${c.icon}`} style={{ color: COLORS.gold, fontSize: 13, width: 16 }} />

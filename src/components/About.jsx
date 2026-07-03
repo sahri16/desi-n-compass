@@ -85,7 +85,7 @@ const About = () => (
         <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 20, fontWeight: 300 }}>
         Desi Compass was founded in March 2026 to bring authentic Desi flavors and global cuisines together under one roof. Inspired by the meaning of a 360° compass, we offer a journey through Indian, Pakistani, Indo-Chinese, Filipino, Continental, Arabic, and BBQ specialties.
         </p>
-        <p style={{ color: 'rgba(255,255,255,0.45)', lineHeight: 1.9, fontSize: 15, fontWeight: 300 }}>
+        <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, fontWeight: 300 }}>
          Every dish is freshly prepared to order using premium ingredients and traditional recipes, delivering the true taste of home with every bite.
         </p>
 

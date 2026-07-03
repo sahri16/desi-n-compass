@@ -110,7 +110,7 @@ export const NAV_LINKS = [
 export const CONTACT_INFO = [
   { icon: 'fa-location-dot', label: 'Location', value: 'B8 Building - Al Barsha First - Al Barsha - Dubai' },
   { icon: 'fa-envelope',     label: 'Email',    value: 'desicompass1@gmail.com'        },
-  { icon: 'fa-phone',        label: 'Phone',    value: '+97155 221 4549'             },
+  { icon: 'fa-phone',        label: 'Phone',    value: '+971 55 221 4549'             },
   { icon: 'fa-clock',        label: 'Hours',    value: 'Daily 7:00 AM – 2:00 AM'   },
 ];
 
