@@ -6,7 +6,7 @@ const scrollTo = (id) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 };
 
-const Navbar = ({ onNavigateMenu }) => {
+const Navbar = ({ onNavigateMenu, navigate }) => {
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
@@ -48,7 +48,17 @@ const Navbar = ({ onNavigateMenu }) => {
             <span
               key={link.id}
               className="nav-link"
-              onClick={() => scrollTo(link.id)}
+              onClick={() => {
+                const isBlogPage = window.location.pathname.toLowerCase() === '/blog';
+                if (link.id === 'blog' && typeof navigate === 'function') {
+                  navigate('/blog');
+                } else if (isBlogPage && typeof navigate === 'function') {
+                  navigate('/');
+                  setTimeout(() => scrollTo(link.id), 120);
+                } else {
+                  scrollTo(link.id);
+                }
+              }}
             >
               {link.label}
             </span>
@@ -106,7 +116,20 @@ const Navbar = ({ onNavigateMenu }) => {
               key={link.id}
               className="nav-link"
               style={{ fontSize: '14px' }}
-              onClick={() => { scrollTo(link.id); setNavOpen(false); }}
+              onClick={() => {
+                const isBlogPage = window.location.pathname.toLowerCase() === '/blog';
+                if (link.id === 'blog' && typeof navigate === 'function') {
+                  navigate('/blog');
+                  setNavOpen(false);
+                } else if (isBlogPage && typeof navigate === 'function') {
+                  navigate('/');
+                  setNavOpen(false);
+                  setTimeout(() => scrollTo(link.id), 120);
+                } else {
+                  scrollTo(link.id);
+                  setNavOpen(false);
+                }
+              }}
             >
               {link.label}
             </span>

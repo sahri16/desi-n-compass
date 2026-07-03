@@ -26,7 +26,7 @@ const NAV_COLS = [
 ];
 
 const Footer = () => (
-  <footer style={{ background: '#0a0a0a', borderTop: '1px solid rgba(242,187,60,0.1)', padding: '60px 60px 28px' }}>
+  <footer className='footer' style={{ background: '#0a0a0a', borderTop: '1px solid rgba(242,187,60,0.1)', padding: '60px 60px 28px' }}>
     <div
       className="footer-grid"
       style={{ display: 'flex', justifyContent: 'space-between', gap: 40, maxWidth: '1200px', margin: '0 auto 40px' }}

@@ -349,6 +349,9 @@ body {
     text-align: center !important;
   }
   .nav-pad      { padding: 0 20px !important; }
+ .footer{
+    padding: 60px 24px 24px 24px !important;
+ }
   .copyright {
     text-align: center;
 }
@@ -357,4 +360,10 @@ body {
 @media (max-width: 480px) {
   .why-grid-4 { grid-template-columns: 1fr !important; }
   .two-col    { grid-template-columns: 1fr !important; }
+}
+
+/* Blog grid responsiveness */
+.blog-grid { grid-template-columns: repeat(2, 1fr); }
+@media (max-width: 768px) {
+  .blog-grid { grid-template-columns: 1fr !important; }
 }

@@ -4,16 +4,16 @@ import { COLORS, REVIEWS } from '../data/constants';
 
 const Reviews = () => {
   const [idx, setIdx] = useState(0);
-const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const t = setInterval(() => setIdx((i) => (i + 1) % REVIEWS.length), 5000);
     return () => clearInterval(t);
   }, []);
 
-useEffect(() => {
-  setExpanded(false);
-}, [idx]);
+  useEffect(() => {
+    setExpanded(false);
+  }, [idx]);
 
   const review = REVIEWS[idx];
 
@@ -44,59 +44,58 @@ useEffect(() => {
             className="fa-solid fa-quote-left"
             style={{ color: COLORS.gold, fontSize: 36, opacity: 0.3, marginBottom: 20, display: 'block' }}
           />
-         <p
-  style={{
-    fontFamily: "'Inter', sans-serif",
-    fontSize: 16,
-    lineHeight: 1.8,
-    color: "rgba(255,255,255,0.82)",
-    fontStyle: "italic",
-    marginBottom: 28,
-  }}
->
-  <span
-    style={{
-      display: "-webkit-inline-box",
-      WebkitBoxOrient: "vertical",
-      WebkitLineClamp: expanded ? "unset" : 3,
-      overflow: "hidden",
-    }}
-  >
-    {review.text}
-  </span>
+          <p
+            style={{
+              fontFamily: "'Inter', sans-serif",
+              fontSize: 13,
+              lineHeight: 1.8,
+              color: "rgba(255,255,255,0.6)",
+              marginBottom: 28,
+            }}
+          >
+            <span
+              style={{
+                display: "-webkit-inline-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: expanded ? "unset" : 3,
+                overflow: "hidden",
+              }}
+            >
+              {review.text}
+            </span>
 
-  {!expanded && review.text.length > 120 && (
-    <>
-      {" "}
-      ...
-      <span
-        onClick={() => setExpanded(true)}
-        style={{
-          color: COLORS.gold,
-          cursor: "pointer",
-          fontWeight: 600,
-          marginLeft: 6,
-        }}
-      >
-        Read More
-      </span>
-    </>
-  )}
+            {!expanded && review.text.length > 120 && (
+              <>
+                {" "}
+                ...
+                <span
+                  onClick={() => setExpanded(true)}
+                  style={{
+                    color: COLORS.gold,
+                    cursor: "pointer",
+                    fontWeight: 600,
+                    marginLeft: 6,
+                  }}
+                >
+                  Read More
+                </span>
+              </>
+            )}
 
-  {expanded && (
-    <span
-      onClick={() => setExpanded(false)}
-      style={{
-        color: COLORS.gold,
-        cursor: "pointer",
-        fontWeight: 600,
-        marginLeft: 8,
-      }}
-    >
-      Read Less
-    </span>
-  )}
-</p>
+            {expanded && (
+              <span
+                onClick={() => setExpanded(false)}
+                style={{
+                  color: COLORS.gold,
+                  cursor: "pointer",
+                  fontWeight: 600,
+                  marginLeft: 8,
+                }}
+              >
+                Read Less
+              </span>
+            )}
+          </p>
 
           {/* Stars */}
           <div style={{ display: 'flex', justifyContent: 'center', gap: 3, marginBottom: 20 }}>
@@ -121,7 +120,7 @@ useEffect(() => {
               <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 16, fontWeight: 600, color: '#fff' }}>
                 {review.name}
               </div>
-              
+
             </div>
           </div>
         </div>

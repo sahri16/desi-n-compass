@@ -5,6 +5,8 @@ import Hero           from './components/Hero';
 import About          from './components/About';
 import Menu           from './components/Menu';
 import MenuPage       from './pages/MenuPage';
+import BlogList       from './pages/BlogList';
+import BlogPost       from './pages/BlogPost';
 import Gallery        from './components/Gallery';
 import WhyUs          from './components/WhyUs';
 import Reviews        from './components/Reviews';
@@ -45,6 +47,9 @@ function App() {
   const isMenuRoute     = location.split('?')[0].toLowerCase() === '/menu';
   const initialCategory = Number(getQueryParam('cat')) || 0;
 
+  const isBlogRoute = location.split('?')[0].toLowerCase() === '/blog';
+  const postSlug = getQueryParam('post');
+
   return (
     <>
       {/* ── Loader — loaded false hone tak dikhta hai ── */}
@@ -63,7 +68,7 @@ function App() {
         }}
       >
         <CustomCursor />
-        <Navbar onNavigateMenu={() => openMenuPage(0)} />
+        <Navbar onNavigateMenu={() => openMenuPage(0)} navigate={navigate} />
         <Breadcrumbs />
 
         {isMenuRoute ? (
@@ -72,18 +77,26 @@ function App() {
             onBack={() => navigate('/')}
           />
         ) : (
-          <>
-            <section id="hero">        <Hero />            </section>
-            <section id="about">       <About />           </section>
-            <section id="menu">        <Menu openFullMenu={openMenuPage} /></section>
-            <section id="gallery">     <Gallery />         </section>
-            <section id="why-us">      <WhyUs />           </section>
-            <section id="reviews">     <Reviews />         </section>
-            <section id="reservation"> <ReservationCTA />  </section>
-            <section id="contact">     <Contact />         </section>
-            <Footer />
-            <WhatsAppFloat />
-          </>
+          isBlogRoute ? (
+            postSlug ? (
+              <BlogPost slug={postSlug} onBack={() => navigate('/blog')} />
+            ) : (
+              <BlogList onOpenPost={(slug) => navigate(`/blog?post=${slug}`)} onBack={() => navigate('/')} />
+            )
+          ) : (
+            <>
+              <section id="hero">        <Hero />            </section>
+              <section id="about">       <About />           </section>
+              <section id="menu">        <Menu openFullMenu={openMenuPage} /></section>
+              <section id="gallery">     <Gallery />         </section>
+              <section id="why-us">      <WhyUs />           </section>
+              <section id="reviews">     <Reviews />         </section>
+              <section id="reservation"> <ReservationCTA />  </section>
+              <section id="contact">     <Contact />         </section>
+              <Footer />
+              <WhatsAppFloat />
+            </>
+          )
         )}
       </div>
     </>

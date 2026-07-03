@@ -101,6 +101,7 @@ export const WHY_US = [
 // ── Nav Links ──
 export const NAV_LINKS = [
   { label: 'Home',       id: 'home'    },
+  { label: 'Blog',       id: 'blog'    },
   { label: 'Menu',       id: 'menu'    },
   { label: 'Gallery',    id: 'gallery' },
   { label: 'Contact Us', id: 'contact' },
