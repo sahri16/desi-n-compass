@@ -235,7 +235,7 @@ const BlogPost = ({ slug, onBack }) => {
         <div style={{ marginTop: 40, textAlign: 'center' }}>
           <button 
           className="btn-gold"
-            onClick={onBack}
+            
             style={{
              padding: '8px 18px',
                         backgroundColor: '#f2bb3c',
@@ -245,14 +245,7 @@ const BlogPost = ({ slug, onBack }) => {
                         fontWeight: 600,
                         cursor: 'pointer',
             }}
-            onMouseEnter={(e) => {
-              e.target.style.background = '#ffffff';
-              e.target.style.color = '#000';
-            }}
-            onMouseLeave={(e) => {
-              e.target.style.background = 'transparent';
-              e.target.style.color = '#ffffff';
-            }}
+
           >
             ← Back to All Blogs
           </button>
