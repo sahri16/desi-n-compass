@@ -41,7 +41,6 @@ const BlogPost = ({ slug, onBack }) => {
       margin: 2.5rem 0 1rem 0;
       line-height: 1.5;
       font-weight: 600;
-      border-bottom: 2px solid rgba(242, 187, 60, 0.3);
       padding-bottom: 0.5rem;
     }
     
@@ -106,6 +105,11 @@ const BlogPost = ({ slug, onBack }) => {
       border-radius: 8px;
       margin: 1.5rem 0;
     }
+
+    .blog-content a {
+      color: #f2bb3c;
+      text-decoration: none;
+    }
     
     @media (max-width: 768px) {
       .blog-content h1 {
@@ -125,12 +129,12 @@ const BlogPost = ({ slug, onBack }) => {
   `;
 
   return (
-    <div style={{ 
-      minHeight: '100vh', 
-      color: '#fff', 
-      background: '#0a0a0a' 
+    <div style={{
+      minHeight: '100vh',
+      color: '#fff',
+      background: '#0a0a0a'
     }}>
-   
+
       <Helmet>
         <title>{post.metaTitle || post.title}</title>
         <meta name="description" content={post.metaDescription} />
@@ -140,76 +144,45 @@ const BlogPost = ({ slug, onBack }) => {
         <link rel="canonical" href={window.location.origin + window.location.pathname} />
         <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : ''} />
       </Helmet>
-      
+
       {/* Hero Section */}
       <div
+        className="hero-section-blog"
         style={{
-          backgroundImage: `linear-gradient(rgba(10,10,10,0.7), rgba(10,10,10,0.7)), url('${heroImage}')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          height: 350,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          padding: '0 20px',
-          position: 'relative',
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          height: 550,
+          padding: "0px 60px",
+         marginTop: 80,
+
         }}
       >
-        <div style={{ textAlign: 'center', color: '#fff', maxWidth: 800 }}>
-          <h1 style={{ 
-            fontSize: 'clamp(20px, 5vw, 28px)', 
-            margin: '0 0 12px 0', 
-            fontWeight: 700,
-            letterSpacing: '1px',
-            color: '#fff',
-            textShadow: '0 2px 20px rgba(0,0,0,0.5)'
-          }}>
-            {post.title}
-          </h1>
-          {/* <div style={{ 
-            fontSize: 'clamp(14px, 1.5vw, 18px)', 
-            color: 'rgba(255,255,255,0.85)', 
-            marginBottom: 16,
-            fontWeight: 300,
-            lineHeight: 1.6
-          }}>
-            {post.summary}
-          </div> */}
+        <img src={post.image} alt={post.title} style={{ height: '100%' }} />
 
-             <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, fontSize: 14 }}>
-            <a
-              onClick={goHome}
-              className="nav-link"
-              style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', color: 'rgba(255,255,255,0.85)' }}
-            >
-              Home
-            </a>
-            <span style={{ color: '#f2bb3c', fontWeight: 'bold' }}>/</span>
-            <span style={{ fontWeight: 600, color: '#fff' }}>Blog</span>
-          </div>
-          
-        </div>
       </div>
 
+
       {/* Blog Content */}
-      <div style={{ 
+      <div style={{
         padding: '60px 24px 80px',
         maxWidth: 900,
         margin: '0 auto',
         width: '100%'
       }}>
-        <div style={{ 
-         
+        <div style={{
+
         }}>
+
           {/* Inject styles */}
           <style>{blogStyles}</style>
-          
+
           {/* Render HTML content */}
-          <div 
+          <div
             className="blog-content"
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
-          
+
           {/* Share/Divider Section */}
           <div style={{
             marginTop: 50,
@@ -226,24 +199,24 @@ const BlogPost = ({ slug, onBack }) => {
               <div style={{ color: '#666', fontSize: 14 }}>
                 Posted on {post.date}
               </div>
-              
+
             </div>
           </div>
         </div>
 
         {/* Back Button */}
         <div style={{ marginTop: 40, textAlign: 'center' }}>
-          <button 
-          className="btn-gold"
-            
+          <button
+            className="btn-gold"
+
             style={{
-             padding: '8px 18px',
-                        backgroundColor: '#f2bb3c',
-                        border: 'none',
-                        borderRadius: 6,
-                        color: '#000',
-                        fontWeight: 600,
-                        cursor: 'pointer',
+              padding: '8px 18px',
+              backgroundColor: '#f2bb3c',
+              border: 'none',
+              borderRadius: 6,
+              color: '#000',
+              fontWeight: 600,
+              cursor: 'pointer',
             }}
 
           >

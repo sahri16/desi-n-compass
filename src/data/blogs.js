@@ -4,7 +4,7 @@ export const BLOGS = [
   {
     id: 1,
     slug: 'authentic-indian-pakistani-food-al-barsha-1-dubai',
-    title: 'Where to Eat Authentic Indian & Pakistani Food in Al Barsha 1, Dubai? Discover Desi Compass Restaurant & Cafe',
+    title: 'Where to Eat Authentic Indian & Pakistani Food in Al Barsha 1, Dubai?',
     metaTitle: 'Authentic Indian & Pakistani Restaurant in Al Barsha 1 | Desi Compass Dubai',
     metaDescription: 'Looking for authentic Indian and Pakistani food in Al Barsha 1? Visit Desi Compass for halal dining, traditional recipes, flavorful biryani, family-friendly ambiance, and exceptional hospitality near Mall of the Emirates.',
     summary: 'Looking for authentic Indian and Pakistani food in Al Barsha 1? Visit Desi Compass for halal dining, traditional recipes, flavorful biryani, family-friendly ambiance, and exceptional hospitality near Mall of the Emirates.',
@@ -13,11 +13,11 @@ export const BLOGS = [
     content: `
 <h1>Where to Eat Authentic Indian & Pakistani Food in Al Barsha 1, Dubai?</h1>
 
-<p>When you're searching for an authentic Indian restaurant in Al Barsha 1 or an authentic Pakistani restaurant in Al Barsha 1, you're looking for more than just a place to eat. You want genuine flavors, freshly prepared meals, warm hospitality, and an experience that feels like home.</p>
+<p>When you're searching for an authentic Indian restaurant in Al Barsha 1 or an authentic Pakistani restaurant in <a href="https://maps.app.goo.gl/MutbChaRYV82JGEo9">Al Barsha 1</a>, you're looking for more than just a place to eat. You want genuine flavors, freshly prepared meals, warm hospitality, and an experience that feels like home.</p>
 
 <p>That's exactly what you'll discover at Desi Compass.</p>
 
-<p>Located in the heart of Al Barsha 1, just minutes from Mall of the Emirates, Desi Compass brings together the rich culinary traditions of India and Pakistan under one roof. From aromatic biryani and slow-cooked curries to sizzling kebabs and freshly baked naan, every dish is prepared with care using authentic recipes and premium ingredients.</p>
+<p>Located in the heart of Al Barsha 1, just minutes from Mall of the Emirates, <a href="/home">Desi Compass</a> brings together the rich culinary traditions of India and Pakistan under one roof. From aromatic biryani and slow-cooked curries to sizzling kebabs and freshly baked naan, every dish is prepared with care using authentic recipes and premium ingredients.</p>
 
 <p>Whether you're planning a family dinner, a casual lunch, or a special celebration, Desi Compass offers a dining experience you'll want to enjoy again and again.</p>
 
@@ -39,7 +39,7 @@ export const BLOGS = [
 
 <h2>A Menu Inspired by the Best of India and Pakistan</h2>
 
-<p>Every dish on our menu tells a story of tradition, culture, and flavor. Whether you're visiting for lunch, dinner, or a weekend family meal, you'll find something to satisfy every craving.</p>
+<p>Every dish on <a href="/menu">our menu</a> tells a story of tradition, culture, and flavor. Whether you're visiting for lunch, dinner, or a weekend family meal, you'll find something to satisfy every craving.</p>
 
 <h3>Signature Biryani</h3>
 
@@ -173,17 +173,17 @@ export const BLOGS = [
 
 <h2>Visit Desi Compass Today</h2>
 
-<p>Discover why locals, families, professionals, and tourists choose Desi Compass for authentic Indian and Pakistani cuisine in Al Barsha 1, Dubai.</p>
+<p>Discover why locals, families, professionals, and tourists choose Desi Compass for authentic Indian and Pakistani cuisine in <a href="https://maps.app.goo.gl/MutbChaRYV82JGEo9">Al Barsha 1, Dubai</a>.</p>
 
 <p>Whether you're craving a comforting curry, a flavorful biryani, freshly grilled kebabs, or a complete family feast, our team is ready to serve you with exceptional food and genuine hospitality.</p>
 
-<p><strong>Come and experience authentic halal dining at Desi Compass Restaurant & Cafe.</strong></p>
+<p>Come and experience authentic halal dining at Desi Compass Restaurant & Cafe.</p>
 `,
   },
   {
     id: 2,
     slug: 'best-chicken-karahi-in-dubai-desi-compass',
-    title: 'Best Chicken Karahi in Dubai at Desi Compass | Authentic Pakistani & Indian Flavors in Al Barsha',
+    title: 'Which Restaurant Serves the Best Chicken Karahi in Dubai?',
     metaTitle: 'Best Chicken Karahi in Dubai at Desi Compass | Authentic Pakistani & Indian Flavors in Al Barsha',
     metaDescription: 'Discover why Desi Compass serves the best chicken karahi in Dubai along with authentic Pakistani and Indian dishes. Fresh halal options in Al Barsha 1 near Mall of the Emirates. Perfect family dining.',
     summary: 'Discover why Desi Compass serves the best chicken karahi in Dubai along with authentic Pakistani and Indian dishes. Fresh halal options in Al Barsha 1 near Mall of the Emirates.',
@@ -192,27 +192,27 @@ export const BLOGS = [
     content: `
 <h1>Which Restaurant Serves the Best Chicken Karahi in Dubai?</h1>
 
-<p>If you're searching for the <strong>best chicken karahi in Dubai</strong>, head straight to Desi Compass in Al Barsha 1. This welcoming restaurant delivers an outstanding authentic Chicken Karahi Dubai experience with tender chicken slow-cooked in a rich, aromatic tomato-based gravy bursting with traditional spices, fresh ginger, garlic, and green chilies.</p>
+<p>If you're searching for the best chicken karahi in Dubai, head straight to Desi Compass in Al Barsha 1. This welcoming restaurant delivers an outstanding authentic Chicken Karahi Dubai experience with tender chicken slow-cooked in a rich, aromatic tomato-based gravy bursting with traditional spices, fresh ginger, garlic, and green chilies.</p>
 
-<p>The sizzling presentation and balanced flavors make every bite memorable, whether you prefer it fiery or milder. As a dedicated <strong>Pakistani restaurant in Dubai</strong> that also excels in Indian favorites, Desi Compass stands out for its commitment to halal ingredients and homestyle cooking that brings the true taste of South Asia to the UAE.</p>
+<p>The sizzling presentation and balanced flavors make every bite memorable, whether you prefer it fiery or milder. As a dedicated Pakistani restaurant in Dubai that also excels in Indian favorites, Desi Compass stands out for its commitment to halal ingredients and homestyle cooking that brings the true taste of South Asia to the UAE.</p>
 
 <h2>What Makes Desi Compass's Chicken Karahi Special?</h2>
 
-<p>At Desi Compass, the Traditional Chicken Karahi Dubai starts with premium fresh chicken and a secret blend of spices toasted in the karahi vessel for deep, layered flavors. The result is a vibrant, non-greasy gravy that clings perfectly to the meat, exactly what fans of <strong>Best Pakistani Chicken Karahi Dubai</strong> crave.</p>
+<p>At Desi Compass, the Traditional <a href="/menu">Chicken Karahi Dubai</a> starts with premium fresh chicken and a secret blend of spices toasted in the karahi vessel for deep, layered flavors. The result is a vibrant, non-greasy gravy that clings perfectly to the meat, exactly what fans of Best Pakistani Chicken Karahi Dubai crave.</p>
 
 <p>Every order is prepared fresh upon request, ensuring that signature smoky aroma and tenderness. Diners love pairing it with hot tandoori naan, garlic naan, or fluffy roti for a complete meal. This focus on quality and authenticity has quickly made Desi Compass a favorite for fresh chicken karahi in Dubai.</p>
 
 <h2>Why Desi Compass is Your Go-To Chicken Karahi Restaurant Dubai</h2>
 
-<p>Conveniently located in Al Barsha 1, Desi Compass is the perfect destination for locals, tourists, and food lovers looking for the <strong>best chicken karahi in Dubai</strong>. If you're searching for chicken karahi near the Mall of the Emirates, our restaurant is just minutes away, making it an ideal stop after a day of shopping, sightseeing, or business meetings.</p>
+<p>Conveniently located in <a href="https://maps.app.goo.gl/MutbChaRYV82JGEo9">Al Barsha 1, Dubai</a>, Desi Compass is the perfect destination for locals, tourists, and food lovers looking for the best chicken karahi in Dubai. If you're searching for chicken karahi near the Mall of the Emirates, our restaurant is just minutes away, making it an ideal stop after a day of shopping, sightseeing, or business meetings.</p>
 
-<p>As a welcoming <strong>family restaurant in Al Barsha 1</strong>, Desi Compass offers a comfortable and inviting dining atmosphere for families, groups of friends, couples, and solo diners. Our attentive service, clean surroundings, and relaxed ambiance allow every guest to enjoy authentic Pakistani chicken karahi, along with a variety of traditional Pakistani and Indian dishes, at their own pace.</p>
+<p>As a welcoming family restaurant in Al Barsha 1, Desi Compass offers a comfortable and inviting dining atmosphere for families, groups of friends, couples, and solo diners. Our attentive service, clean surroundings, and relaxed ambiance allow every guest to enjoy authentic Pakistani chicken karahi, along with a variety of traditional Pakistani and Indian dishes, at their own pace.</p>
 
 <h2>Exploring the Menu: More Than Just Karahi</h2>
 
-<p>While the <strong>best chicken karahi in Dubai</strong> draws crowds to Desi Compass, the restaurant excels across both classic Pakistani and Indian dishes. Expect juicy seekh kebabs and reshmi kebabs, fragrant mutton biryani or chicken dum biryani, butter chicken, dal makhani, paneer tikka masala, and comforting sides like naan, roti, raita, and fresh kachumber salad that perfectly complement your main.</p>
+<p>While the best chicken karahi in Dubai draws crowds to Desi Compass, the restaurant excels across both classic Pakistani and Indian dishes. Expect juicy seekh kebabs and reshmi kebabs, fragrant mutton biryani or chicken dum biryani, butter chicken, dal makhani, paneer tikka masala, and comforting sides like naan, roti, raita, and fresh kachumber salad that perfectly complement your main.</p>
 
-<p>Portions are generous and prices are reasonable, offering excellent value for the quality. Whether dining in or ordering takeaway, the consistent taste and freshness reinforce why Desi Compass is rising as a top <strong>Pakistani restaurant in Dubai</strong> and a favorite for Indian-Pakistani fusion flavors.</p>
+<p>Portions are generous and prices are reasonable, offering excellent value for the quality. Whether dining in or ordering takeaway, the consistent taste and freshness reinforce why Desi Compass is rising as a top Pakistani restaurant in Dubai and a favorite for Indian-Pakistani fusion flavors.</p>
 
 <h2>Practical Tips for Your Visit to Desi Compass</h2>
 
@@ -223,7 +223,7 @@ export const BLOGS = [
 <p>Inform the team if you want milder heat; they happily customize it to suit your taste.</p>
 
 <h3>Best Time</h3>
-<p>Weekday lunches or early dinners offer a quieter experience; weekends are lively with families enjoying <strong>Halal Chicken Karahi in Dubai</strong>.</p>
+<p>Weekday lunches or early dinners offer a quieter experience; weekends are lively with families enjoying Halal Chicken Karahi in Dubai.</p>
 
 <h3>Pairings</h3>
 <p>Try the Chicken Karahi with fresh salad, raita, and naan for the full traditional experience.</p>
@@ -231,7 +231,7 @@ export const BLOGS = [
 <h3>Dietary Focus</h3>
 <p>Everything is prepared with halal standards, making it a safe and delicious choice for all.</p>
 
-<p>For anyone asking <strong>where to eat chicken karahi in Dubai</strong>, Desi Compass provides a reliable, high-quality answer in a prime location.</p>
+<p>For anyone asking where to eat chicken karahi in Dubai, Desi Compass provides a reliable, high-quality answer in a prime location.</p>
 
 <h2>FAQs About Chicken Karahi at Desi Compass</h2>
 
@@ -245,18 +245,18 @@ export const BLOGS = [
 <p>Yes, we adjust the spice level according to your preference while maintaining the rich, traditional flavors.</p>
 
 <h3>Where exactly is Desi Compass located?</h3>
-<p>We are conveniently situated in Al Barsha 1, close to Mall of the Emirates, perfect for Chicken Karahi Al Barsha, Dubai.</p>
+<p>We are conveniently situated in Al Barsha 1, close to Mall of the Emirates, perfect for <a href="/menu">Chicken Karahi</a> Al Barsha, Dubai.</p>
 
 <h3>Is the food halal and fresh?</h3>
 <p>All our dishes, including the signature chicken karahi, use 100% fresh halal chicken and premium spices prepared daily.</p>
 
 <h2>Conclusion: Experience the Best Chicken Karahi at Desi Compass</h2>
 
-<p>For the unbeatable <strong>best Pakistani chicken karahi in Dubai</strong> alongside authentic Indian and Pakistani dishes, Desi Compass in Al Barsha 1 delivers every time. Our dedication to quality, freshness, and traditional recipes makes us the ideal destination for satisfying desi cravings in a warm, family-oriented setting.</p>
+<p>For the unbeatable best Pakistani chicken karahi in Dubai alongside authentic Indian and Pakistani dishes, Desi Compass in Al Barsha 1 delivers every time. Our dedication to quality, freshness, and traditional recipes makes us the ideal destination for satisfying desi cravings in a warm, family-oriented setting.</p>
 
-<p>Next time hunger strikes for bold, comforting flavors, make your way to Desi Compass. You'll leave with a full stomach and a new favorite spot.</p>
+<p>Next time hunger strikes for bold, comforting flavors, make your way to <a href="/home">Desi Compass</a>. You'll leave with a full stomach and a new favorite spot.</p>
 
-<p><strong>Ready to taste the best? Visit Desi Compass Restaurant & Cafe in Al Barsha 1 today or call ahead to reserve your table. Follow us for specials, updates, and more mouthwatering desi delights. We can't wait to serve you the finest chicken karahi restaurant experience in Dubai!</strong></p>
+<p>Ready to taste the best? Visit Desi Compass Restaurant & Cafe in Al Barsha 1 today or call ahead to reserve your table. Follow us for specials, updates, and more mouthwatering desi delights. We can't wait to serve you the finest chicken karahi restaurant experience in Dubai!</p>
 
 <p><em>This guide reflects the passion and quality at Desi Compass as of 2026. Hours and menu items may vary; contact us directly for the latest details.</em></p>
 `,
@@ -264,7 +264,7 @@ export const BLOGS = [
 {
     id: 3,
     slug: 'desi-compass-best-affordable-indian-pakistani-dubai',
-    title: 'Desi Compass Dubai – Best Affordable Indian & Pakistani Restaurant in Al Barsha',
+    title: 'Affordable Indian & Pakistani Restaurants in Dubai Without Compromising Taste',
     metaTitle: 'Desi Compass Dubai – Best Affordable Indian & Pakistani Restaurant in Al Barsha',
     metaDescription: 'Tired of paying premium prices for average taste? Desi Compass in Al Barsha serves authentic, flavorful Indian & Pakistani cuisine at budget-friendly rates. The top pick for families and food lovers near Mall of the Emirates.',
     summary: 'Tired of paying premium prices for average taste? Desi Compass in Al Barsha serves authentic, flavorful Indian & Pakistani cuisine at budget-friendly rates. The top pick for families and food lovers near Mall of the Emirates.',
@@ -273,15 +273,15 @@ export const BLOGS = [
     content: `
 <h1>Affordable Indian & Pakistani Restaurants in Dubai Without Compromising Taste</h1>
 
-<p>Looking for <strong>affordable Indian & Pakistani restaurants in Dubai</strong> that don't force you to choose between taste and your wallet? Meet Desi Compass—the Al Barsha gem that's quietly becoming the favorite destination for bold, soul-satisfying desi flavors in 2026.</p>
+<p>Looking for affordable Indian & Pakistani restaurants in Dubai that don't force you to choose between taste and your wallet? Meet Desi Compass—the Al Barsha gem that's quietly becoming the favorite destination for bold, soul-satisfying desi flavors in 2026.</p>
 
-<p>Whether you're chasing the <strong>best affordable Indian restaurant in Dubai</strong>, a reliable <strong>budget-friendly Pakistani restaurant in Dubai</strong>, or simply want delicious Indian & Pakistani food in Dubai that feels like home, Desi Compass delivers every time. Located in Al Barsha 1, steps from Mall of the Emirates, it proves great food doesn't need a fancy price tag.</p>
+<p>Whether you're chasing the best affordable Indian restaurant in Dubai, a reliable budget-friendly Pakistani restaurant in Dubai, or simply want delicious Indian & Pakistani food in Dubai that feels like home, Desi Compass delivers every time. Located in Al Barsha 1, steps from Mall of the Emirates, it proves great food doesn't need a fancy price tag.</p>
 
 <h2>The Desi Compass Story: Tradition Meets Everyday Dubai Life</h2>
 
-<p>What makes Desi Compass special isn't just the food, it's the heart behind it. Inspired by bustling kitchens across Lahore, Karachi, and Mumbai, the team at Desi Compass brings generations of family recipes to Dubai while keeping prices real for locals and visitors alike.</p>
+<p>What makes <a href="/home">Desi Compass</a> special isn't just the food, it's the heart behind it. Inspired by bustling kitchens across Lahore, Karachi, and Mumbai, the team at Desi Compass brings generations of family recipes to Dubai while keeping prices real for locals and visitors alike.</p>
 
-<p>Here, every dish tells a story. The slow-cooked biryanis carry the patience of traditional dum methods. The karahi bubbles with fresh spices ground daily. Even the humble dal feels elevated. This isn't fast food disguised as desi, it's honest, <strong>authentic Indian & Pakistani cuisine in Dubai</strong> that respects both heritage and your budget.</p>
+<p>Here, every dish tells a story. The slow-cooked biryanis carry the patience of traditional dum methods. The karahi bubbles with fresh spices ground daily. Even the humble dal feels elevated. This isn't fast food disguised as desi, it's honest, authentic Indian & Pakistani cuisine in Dubai that respects both heritage and your budget.</p>
 
 <h2>Standout Dishes That Keep People Coming Back</h2>
 
@@ -297,7 +297,7 @@ export const BLOGS = [
 <p>Juicy seekh kebabs, malai tikka, and tandoori roti pulled fresh from the oven.</p>
 
 <h3>Comfort Classics</h3>
-<p>Butter chicken that actually tastes homemade, dal makhani slow-simmered to creamy perfection, and flavorful vegetarian delights.</p>
+<p><a href="/menu">Butter chicken</a> that actually tastes homemade, dal makhani slow-simmered to creamy perfection, and flavorful vegetarian delights.</p>
 
 <h3>Street-Style Sides</h3>
 <p>Crispy samosas, refreshing raitas, and masala chai that completes the experience.</p>
@@ -306,15 +306,15 @@ export const BLOGS = [
 
 <h2>Why Families Love Desi Compass in Al Barsha</h2>
 
-<p>Desi Compass has earned its reputation as one of the <strong>best family restaurants in Al Barsha 1</strong>. With comfortable family seating, adjustable spice levels for kids, and a warm, no-fuss atmosphere, it feels welcoming rather than formal.</p>
+<p>Desi Compass has earned its reputation as one of the best family restaurants in Al Barsha 1. With comfortable family seating, adjustable spice levels for kids, and a warm, no-fuss atmosphere, it feels welcoming rather than formal.</p>
 
-<p>Its location near Mall of the Emirates makes it incredibly practical. Finish your shopping, avoid expensive mall restaurants, and enjoy real flavors at Desi Compass instead. As a fully <strong>halal Indian & Pakistani restaurant in Dubai</strong>, it caters to everyone seeking genuine taste.</p>
+<p>Its location near Mall of the Emirates makes it incredibly practical. Finish your shopping, avoid expensive mall restaurants, and enjoy real flavors at Desi Compass instead. As a fully alal Indian & Pakistani restaurant in Dubai, it caters to everyone seeking genuine taste.</p>
 
 <h2>Best Value Dining in Dubai's Competitive Scene</h2>
 
-<p>In a city where dining can get expensive quickly, Desi Compass shines as the <strong>best value Indian & Pakistani restaurant in Dubai</strong>. You get restaurant-quality execution at street-style prices, usually AED 35–75 per person for a complete, satisfying meal.</p>
+<p>In a city where dining can get expensive quickly, Desi Compass shines as the best value Indian & Pakistani restaurant in Dubai. You get restaurant-quality execution at street-style prices, usually AED 35–75 per person for a complete, satisfying meal.</p>
 
-<p>It stands tall among <strong>cheap Indian and Pakistani restaurant Dubai</strong> options because it never cuts corners on quality. Fresh ingredients, skilled hands in the kitchen, and consistent execution set it apart.</p>
+<p>It stands tall among cheap Indian and Pakistani restaurant Dubaioptions because it never cuts corners on quality. Fresh ingredients, skilled hands in the kitchen, and consistent execution set it apart.</p>
 
 <h2>Pro Tips for the Ultimate Desi Compass Experience</h2>
 
@@ -347,11 +347,11 @@ export const BLOGS = [
 
 <h2>Conclusion: Your New Favorite Desi Destination in Dubai</h2>
 
-<p>Desi Compass isn't just another restaurant, it's where Dubai's diverse community comes together over plates of honest, flavorful Indian and Pakistani food. It successfully combines <strong>affordable restaurants in Dubai without compromising taste</strong> with the warmth of traditional hospitality.</p>
+<p>Desi Compass isn't just another restaurant, it's where Dubai's diverse community comes together over plates of honest, flavorful Indian and Pakistani food. It successfully combines affordable restaurants in Dubai without compromising taste with the warmth of traditional hospitality.</p>
 
-<p>Next time hunger strikes near Mall of the Emirates or you simply want <strong>where to eat affordable Indian & Pakistani food in Dubai</strong>, let your compass point to Desi Compass in Al Barsha 1.</p>
+<p>Next time hunger strikes near Mall of the Emirates or you simply want  where to eat affordable Indian & Pakistani food in Dubai, let your compass point to Desi Compass in Al Barsha 1.</p>
 
-<p><strong>Ready for real flavors? Visit Desi Compass today and discover why so many are calling it their new go-to spot. Bring your family, bring your friends, and come with an empty stomach; you won't regret it.</strong></p>
+<p>Ready for real flavors? Visit Desi Compass today and discover why so many are calling it their new go-to spot. Bring your family, bring your friends, and come with an empty stomach; you won't regret it.</p>
 
 <p><em>Drop a comment below with your must-try dish at Desi Compass after your visit. We'd love to hear your story!</em></p>
 

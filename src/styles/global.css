@@ -357,6 +357,10 @@ body {
   padding: 20px 10px;
 }
 
+.hero-section-blog{
+  height: 220px !important;
+  margin-top: 70px !important;
+}
  .footer{
     padding: 60px 24px 24px 24px !important;
  }

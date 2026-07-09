@@ -110,7 +110,7 @@ const BlogList = ({ onOpenPost }) => {
                   <div
                     style={{
                       overflow: 'hidden',
-                      height: 200,
+                      height: 270,
                     }}
                   >
                     <img
@@ -118,7 +118,7 @@ const BlogList = ({ onOpenPost }) => {
                       alt={b.title}
                       style={{
                         width: '100%',
-                        height: '100%',
+                        // height: '100%',
                         objectFit: 'cover',
                         transition: '0.4s',
                       }}

@@ -51,7 +51,7 @@ const Breadcrumbs = () => {
   return (
     <div className="fixed bottom-4 left-4 z-40 hidden md:flex items-center gap-2 bg-opacity-80 bg-black px-4 py-2 rounded-lg border border-amber-600 border-opacity-30">
       <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm">
-        {breadcrumbs.map((crumb, index) => (
+        {/* {breadcrumbs.map((crumb, index) => (
           <div key={crumb.id} className="flex items-center gap-2">
             {index > 0 && <ChevronRight size={16} className="text-amber-600" />}
             <button
@@ -65,7 +65,7 @@ const Breadcrumbs = () => {
               {crumb.label}
             </button>
           </div>
-        ))}
+        ))} */}
       </nav>
     </div>
   );
