@@ -126,7 +126,7 @@ const PageLoader = ({ onComplete }) => {
           animation: 'goldFadeIn 0.8s ease 0.3s both',
         }}>
           <div style={{
-            fontFamily:    "'Playfair Display', serif",
+            fontFamily:    "'Libre Baskerville', serif",
             fontSize:      '28px',
             fontWeight:    900,
             letterSpacing: '6px',
@@ -186,7 +186,7 @@ const PageLoader = ({ onComplete }) => {
             alignItems:    'center',
           }}>
             <span style={{
-              fontFamily:    "'Inter', sans-serif",
+              fontFamily:    "'Montserrat', sans-serif",
               fontSize:      11,
               color:         'rgba(255,255,255,0.25)',
               letterSpacing: '1.5px',
@@ -195,7 +195,7 @@ const PageLoader = ({ onComplete }) => {
               Loading
             </span>
             <span style={{
-              fontFamily: "'Playfair Display', serif",
+              fontFamily: "'Libre Baskerville', serif",
               fontSize:   14,
               fontWeight: 700,
               color:      '#F2BB3C',

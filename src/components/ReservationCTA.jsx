@@ -57,7 +57,7 @@ const ReservationCTA = () => (
           <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Today</span>
         </h2>
 
-        <p style={{ color: 'rgba(255,255,255,0.45)', maxWidth: 420, margin: '0 auto 38px', lineHeight: 1.7, fontSize: 15 }}>
+        <p style={{ color: 'rgba(255,255,255,0.7)', maxWidth: 420, margin: '0 auto 38px', lineHeight: 1.7, fontSize: 15 }}>
           Experience the finest authentic Desi dining in Dubai at Desi Compass. Fresh Indian, Pakistani & fusion flavors in a warm, luxurious ambiance.
           Reservations are highly recommended. Tables fill up fast.
         </p>

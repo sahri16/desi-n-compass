@@ -49,7 +49,7 @@ const Navbar = ({ onNavigateMenu, navigate }) => {
               key={link.id}
               className="nav-link"
               onClick={() => {
-                const isBlogPage = window.location.pathname.toLowerCase() === '/blog';
+                const isBlogPage = window.location.pathname.toLowerCase().startsWith('/blog');
                 if (link.id === 'blog' && typeof navigate === 'function') {
                   navigate('/blog');
                 } else if (isBlogPage && typeof navigate === 'function') {
@@ -117,7 +117,7 @@ const Navbar = ({ onNavigateMenu, navigate }) => {
               className="nav-link"
               style={{ fontSize: '14px' }}
               onClick={() => {
-                const isBlogPage = window.location.pathname.toLowerCase() === '/blog';
+                const isBlogPage = window.location.pathname.toLowerCase().startsWith('/blog');
                 if (link.id === 'blog' && typeof navigate === 'function') {
                   navigate('/blog');
                   setNavOpen(false);

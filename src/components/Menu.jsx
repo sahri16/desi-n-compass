@@ -108,7 +108,7 @@ const Menu = ({ openFullMenu }) => {
                       border: '1px solid rgba(242,187,60,0.35)',
                       color: COLORS.gold, fontSize: 14, fontWeight: 700,
                       padding: '4px 12px', borderRadius: 4,
-                      fontFamily: "'Playfair Display',serif",
+                      fontFamily: "'Libre Baskerville',serif",
                     }}>
                       {item.price}
                     </div>
@@ -117,13 +117,13 @@ const Menu = ({ openFullMenu }) => {
                   {/* Info */}
                   <div style={{ padding: '18px 20px 22px' }}>
                     <div style={{
-                      fontFamily: "'Playfair Display',serif",
+                      fontFamily: "'Libre Baskerville',serif",
                       fontSize: 18, fontWeight: 600,
                       color: '#fff', marginBottom: 8, lineHeight: 1.25,
                     }}>
                       {item.name}
                     </div>
-                    <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, lineHeight: 1.6, fontWeight: 300 }}>
+                    <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13, lineHeight: 1.6, fontWeight: 300 }}>
                       {item.desc}
                     </div>
 

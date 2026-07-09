@@ -33,13 +33,13 @@ const WhyUs = () => (
               </div>
               <div
                 style={{
-                  fontFamily: "'Playfair Display',serif",
+                  fontFamily: "'Libre Baskerville',serif",
                   fontSize: 17, fontWeight: 600, color: '#fff', marginBottom: 10,
                 }}
               >
                 {item.title}
               </div>
-              <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, lineHeight: 1.7, fontWeight: 300 }}>
+              <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13, lineHeight: 1.7, fontWeight: 300 }}>
                 {item.desc}
               </div>
             </div>

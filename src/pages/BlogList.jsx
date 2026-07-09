@@ -33,6 +33,7 @@ const BlogList = ({ onOpenPost }) => {
               margin: '0 0 10px 0',
               fontWeight: 700,
               letterSpacing: '1px',
+              fontFamily: "'Libre Baskerville', serif",
             }}
           >
             Blog
@@ -89,7 +90,7 @@ const BlogList = ({ onOpenPost }) => {
               gap: 30,
             }}
           >
-            {BLOGS.map((b) => (
+            {BLOGS.map((b, index) => (
               <article
                 key={b.slug}
                 className="menu-card"
@@ -114,6 +115,8 @@ const BlogList = ({ onOpenPost }) => {
                     }}
                   >
                     <img
+                      loading={index === 0 ? 'eager' : 'lazy'}
+                      decoding="async"
                       src={b.image}
                       alt={b.title}
                       style={{
@@ -147,6 +150,7 @@ const BlogList = ({ onOpenPost }) => {
                       WebkitBoxOrient: 'vertical',
                       overflow: 'hidden',
                       minHeight: 56,
+                      fontFamily: "'Libre Baskerville', serif",
                     }}
                   >
                     {b.title}

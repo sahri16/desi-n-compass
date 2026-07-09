@@ -28,7 +28,7 @@ const WhatsAppButton = ({ item, categoryName }) => {
         borderRadius: 6,
         cursor: "pointer",
         transition: "all .25s",
-        fontFamily: "'Inter', sans-serif",
+        fontFamily: "'Montserrat', sans-serif",
         whiteSpace: "nowrap",
         boxShadow: hovered
           ? "0 4px 15px rgba(37,211,102,.3)"

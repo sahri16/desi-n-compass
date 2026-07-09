@@ -78,7 +78,7 @@ const Gallery = () => {
                 padding: '20px 24px', borderRadius: '0 0 12px 12px',
               }}
             >
-              <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 20, color: '#fff' }}>
+              <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 20, color: '#fff' }}>
                 {GALLERY_IMAGES[lightbox].label}
               </div>
               <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: 11, letterSpacing: '2px', marginTop: 3 }}>

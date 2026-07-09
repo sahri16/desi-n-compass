@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: rgb(10, 10, 10);
   color: #ffffff;
   overflow-x: hidden;
@@ -64,7 +64,7 @@ body {
   margin-bottom: 10px;
 }
 .section-title {
-  font-family: 'Playfair Display', serif;
+  font-family:"Libre Baskerville", serif;
   font-size: clamp(30px, 5vw, 54px);
   font-weight: 700;
   line-height: 1.1;
@@ -89,7 +89,7 @@ body {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: "Montserrat", sans-serif;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
   transition: all 0.3s;
   display: inline-flex;
@@ -112,7 +112,7 @@ body {
   letter-spacing: 2.5px;
   text-transform: uppercase;
   cursor: pointer;
-  font-family: 'Inter', sans-serif;
+  font-family: "Montserrat", sans-serif;
   clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
   transition: all 0.3s;
   display: inline-flex;
@@ -184,7 +184,7 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s;
-  font-family: 'Inter', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   border-radius: 4px;
   display: inline-flex;
@@ -275,7 +275,7 @@ body {
   color: #ffffff;
   padding: 14px 18px;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: "Montserrat", sans-serif;
   transition: border-color 0.3s;
   outline: none;
   border-radius: 6px;

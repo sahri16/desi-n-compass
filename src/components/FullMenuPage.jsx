@@ -49,13 +49,13 @@ const MenuCard = ({ item, categoryName }) => {
           border: '1px solid rgba(242,187,60,0.35)',
           color: GOLD, fontSize: 14, fontWeight: 700,
           padding: '4px 12px', borderRadius: 4,
-          fontFamily: "'Playfair Display',serif",
+          fontFamily: "'Libre Baskerville',serif",
         }}>{item.price}</div>
       </div>
 
       {/* Info */}
       <div style={{ padding: '18px 20px 22px', display: 'flex', flexDirection: 'column', flex: 1 }}>
-        <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 18, fontWeight: 600, color: '#fff', marginBottom: 8, lineHeight: 1.25 }}>
+        <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 18, fontWeight: 600, color: '#fff', marginBottom: 8, lineHeight: 1.25 }}>
           {item.name}
         </div>
         <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 13, lineHeight: 1.6, fontWeight: 300, flex: 1 }}>
@@ -178,7 +178,7 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
             <button className="fm-back-btn" onClick={onClose}>
               <i className="fa-solid fa-arrow-left" style={{ fontSize: 11 }} /> Back
             </button>
-            <div className="fm-topbar-title" style={{ fontFamily: "'Playfair Display',serif", fontSize: 17, fontWeight: 700, color: '#fff' }}>
+            <div className="fm-topbar-title" style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 17, fontWeight: 700, color: '#fff' }}>
               Full <span style={{ color: GOLD }}>Menu</span>
             </div>
           </div>
@@ -230,7 +230,7 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
                 <div style={{ fontSize: 10, letterSpacing: '3px', color: GOLD, textTransform: 'uppercase', fontWeight: 600, marginBottom: 5 }}>
                   Browse By
                 </div>
-                <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 19, fontWeight: 700, color: '#fff' }}>
+                <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 19, fontWeight: 700, color: '#fff' }}>
                   Categories
                 </div>
                 <div style={{ width: 32, height: 1, background: `linear-gradient(90deg,${GOLD},transparent)`, marginTop: 10 }} />
@@ -281,7 +281,7 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
                 borderRadius: 12,
               }}>
                 <i className="fa-solid fa-compass" style={{ color: GOLD, fontSize: 22, marginBottom: 10, display: 'block' }} />
-                <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 13, fontWeight: 600, color: '#fff', marginBottom: 6 }}>
+                <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 13, fontWeight: 600, color: '#fff', marginBottom: 6 }}>
                   Can't decide?
                 </div>
                 <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.38)', lineHeight: 1.6, marginBottom: 14 }}>
@@ -366,7 +366,7 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
                     <div style={{ fontSize: 10, letterSpacing: '3px', color: GOLD, textTransform: 'uppercase', fontWeight: 600, marginBottom: 3 }}>
                       Our Selection
                     </div>
-                    <h1 style={{ fontFamily: "'Playfair Display',serif", fontSize: 'clamp(26px,4vw,44px)', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
+                    <h1 style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 'clamp(26px,4vw,44px)', fontWeight: 900, color: '#fff', lineHeight: 1 }}>
                       {cat.category}
                     </h1>
                   </div>
@@ -410,7 +410,7 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
                 borderRadius: 20, marginTop: 60,
               }}>
                 <i className="fa-solid fa-compass" style={{ color: GOLD, fontSize: 36, marginBottom: 14, display: 'block', opacity: 0.5 }} />
-                <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 26, fontWeight: 700, color: '#fff', marginBottom: 10 }}>
+                <div style={{ fontFamily: "'Libre Baskerville',serif", fontSize: 26, fontWeight: 700, color: '#fff', marginBottom: 10 }}>
                   Ready to <span style={{ color: GOLD, fontStyle: 'italic' }}>Navigate</span>?
                 </div>
                 <p style={{ color: 'rgba(255,255,255,0.38)', fontSize: 14, maxWidth: 360, margin: '0 auto 26px', lineHeight: 1.7 }}>

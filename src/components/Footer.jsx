@@ -61,7 +61,7 @@ const Footer = () => (
         <div onClick={() => handleNavClick('home')} style={{ cursor: 'pointer' }}>
           <LogoMark />
         </div>
-        <p style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, lineHeight: 1.8, marginTop: 16, fontWeight: 300 }}>
+        <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13, lineHeight: 1.8, marginTop: 16, fontWeight: 300 }}>
           Dubai's premier South Asian fine dining destination. Every dish, a new compass direction of flavour.
         </p>
         <div style={{ display: 'flex', gap: 10, marginTop: 20 }}>
@@ -83,7 +83,7 @@ const Footer = () => (
             <div
               key={link.label}
               onClick={() => handleNavClick(link.id)} // Using the smart handler here
-              style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, marginBottom: 10, cursor: 'pointer', fontWeight: 300, transition: 'color 0.2s' }}
+              style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13, marginBottom: 10, cursor: 'pointer', fontWeight: 300, transition: 'color 0.2s' }}
               onMouseEnter={(e) => (e.target.style.color = COLORS.gold)}
               onMouseLeave={(e) => (e.target.style.color = 'rgba(255,255,255,0.6)')}
             >
@@ -106,7 +106,7 @@ const Footer = () => (
         ].map((c) => (
           <div key={c.text} style={{ display: 'flex', gap: 10, alignItems: 'center', marginBottom: 12 }}>
             <i className={`fa-solid ${c.icon}`} style={{ color: COLORS.gold, fontSize: 13, width: 16 }} />
-            <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: 13, fontWeight: 300 }}>{c.text}</span>
+            <span style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13, fontWeight: 300 }}>{c.text}</span>
           </div>
         ))}
       </div>
@@ -126,10 +126,10 @@ const Footer = () => (
         gap: 10,
       }}
     >
-      <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12 }}>
+      <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12 }}>
         © 2026 Desi Compass. All rights reserved. Dubai, UAE.
       </div>
-      <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: 12, display: 'flex', alignItems: 'center', gap: 6 }}>
+      <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: 12, display: 'flex', alignItems: 'center', gap: 6 }}>
         Crafted with <i className="fa-solid fa-compass" style={{ color: COLORS.gold, fontSize: 11 }} /> for the finest dining
       </div>
     </div>

@@ -32,7 +32,8 @@ const BlogPost = ({ slug, onBack }) => {
       margin: 0 0 1.5rem 0;
       line-height: 1.5;
       font-weight: 700;
-      letter-spacing: -0.5px;
+      letter-spacing: 0.6px;
+      font-family: "'Libre Baskerville', serif";
     }
     
     .blog-content h2 {
@@ -42,6 +43,8 @@ const BlogPost = ({ slug, onBack }) => {
       line-height: 1.5;
       font-weight: 600;
       padding-bottom: 0.5rem;
+         font-family: "'Libre Baskerville', serif";
+         letter-spacing: 0.6px;
     }
     
     .blog-content h3 {
@@ -50,12 +53,14 @@ const BlogPost = ({ slug, onBack }) => {
       margin: 1.8rem 0 0.8rem 0;
       line-height: 1.5;
       font-weight: 600;
+         font-family: "'Libre Baskerville', serif";
+         letter-spacing: 0.6px;
     }
     
     .blog-content p {
       font-size: 1.05rem;
       line-height: 1.9;
-      color: rgb(198 200 201);
+      color: rgba(255,255,255,0.8);
       margin: 0 0 1.2rem 0;
     }
     
@@ -68,7 +73,7 @@ const BlogPost = ({ slug, onBack }) => {
     .blog-content ul li {
       font-size: 1.05rem;
       line-height: 1.9;
-      color: rgb(198 200 201);
+      color: rgba(255,255,255,0.8);
       padding: 0.3rem 0 0.3rem 1.5rem;
       position: relative;
     }
@@ -208,7 +213,7 @@ const BlogPost = ({ slug, onBack }) => {
         <div style={{ marginTop: 40, textAlign: 'center' }}>
           <button
             className="btn-gold"
-
+            onClick={onBack}
             style={{
               padding: '8px 18px',
               backgroundColor: '#f2bb3c',
@@ -218,7 +223,6 @@ const BlogPost = ({ slug, onBack }) => {
               fontWeight: 600,
               cursor: 'pointer',
             }}
-
           >
             ← Back to All Blogs
           </button>

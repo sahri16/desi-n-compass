@@ -23,7 +23,7 @@ const LogoMark = ({ size = 'md' }) => {
         <div
           style={{
             color: COLORS.gold,
-            fontFamily: "'Playfair Display', serif",
+            fontFamily: "'Libre Baskerville', serif",
             fontSize: sm ? 13 : 16,
             fontWeight: 700,
             letterSpacing: '3px',
@@ -35,7 +35,7 @@ const LogoMark = ({ size = 'md' }) => {
         <div
           style={{
             color: '#fff',
-            fontFamily: "'Playfair Display', serif",
+            fontFamily: "'Libre Baskerville', serif",
             fontSize: sm ? 13 : 16,
             fontWeight: 400,
             letterSpacing: '4px',

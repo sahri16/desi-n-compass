@@ -64,7 +64,7 @@ const About = () => (
               padding: '14px 18px', borderRadius: 8,
             }}
           >
-            <div style={{ color: COLORS.gold, fontFamily: "'Playfair Display',serif", fontSize: 13, fontWeight: 600 }}>
+            <div style={{ color: COLORS.gold, fontFamily: "'Libre Baskerville',serif", fontSize: 13, fontWeight: 600 }}>
               Est. in Dubai
             </div>
             <div style={{ color: 'rgba(255,255,255,0.5)', fontSize: 11, letterSpacing: '1px', marginTop: 2 }}>
@@ -82,10 +82,10 @@ const About = () => (
           <span style={{ color: COLORS.gold, fontStyle: 'italic' }}>Leads to Flavor</span>
         </h2>
         <div className="gold-line" />
-        <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, marginBottom: 20, fontWeight: 300 }}>
+        <p style={{ color: 'rgba(255,255,255,0.7)', lineHeight: 1.9, fontSize: 15, marginBottom: 20, fontWeight: 300 }}>
         Desi Compass was founded in March 2026 to bring authentic Desi flavors and global cuisines together under one roof. Inspired by the meaning of a 360° compass, we offer a journey through Indian, Pakistani, Indo-Chinese, Filipino, Continental, Arabic, and BBQ specialties.
         </p>
-        <p style={{ color: 'rgba(255,255,255,0.6)', lineHeight: 1.9, fontSize: 15, fontWeight: 300 }}>
+        <p style={{ color: 'rgba(255,255,255,0.7)', lineHeight: 1.9, fontSize: 15, fontWeight: 300 }}>
          Every dish is freshly prepared to order using premium ingredients and traditional recipes, delivering the true taste of home with every bite.
         </p>
 
@@ -95,14 +95,14 @@ const About = () => (
             <div key={label}>
               <div
                 style={{
-                  fontFamily: "'Playfair Display',serif",
+                  fontFamily: "'Libre Baskerville',serif",
                   fontSize: 36, fontWeight: 700,
                   color: COLORS.gold, lineHeight: 1,
                 }}
               >
                 {num}
               </div>
-              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.6)', letterSpacing: '1.5px', textTransform: 'uppercase', marginTop: 4 }}>
+              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.7)', letterSpacing: '1.5px', textTransform: 'uppercase', marginTop: 4 }}>
                 {label}
               </div>
             </div>

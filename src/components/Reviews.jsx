@@ -47,7 +47,7 @@ const Reviews = () => {
           />
           <p
             style={{
-              fontFamily: "'Inter', sans-serif",
+              fontFamily: "'Montserrat', sans-serif",
               fontSize: 13,
               lineHeight: 1.8,
               color: "rgba(255,255,255,0.6)",
@@ -118,7 +118,7 @@ const Reviews = () => {
               {review.avatar}
             </div>
             <div style={{ textAlign: 'left' }}>
-              <div style={{ fontFamily: "'Playfair Display',serif", fontSize: 16, fontWeight: 600, color: '#fff' }}>
+              <div style={{ fontFamily: "'Libre Baskerville', serif", fontSize: 16, fontWeight: 600, color: '#fff' }}>
                 {review.name}
               </div>
 

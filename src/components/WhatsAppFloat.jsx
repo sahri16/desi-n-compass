@@ -33,7 +33,7 @@ const WhatsAppFloat = () => {
           background: '#1f1f1f',
           color: '#fff',
           fontSize: 13,
-          fontFamily: "'Inter', sans-serif",
+          fontFamily: "'Montserrat', sans-serif",
           fontWeight: 500,
           padding: '8px 14px',
           borderRadius: 8,

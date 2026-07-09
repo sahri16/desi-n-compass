@@ -109,7 +109,7 @@ const Hero = () => {
       >
         <h1
           style={{
-            fontFamily: "'Playfair Display', serif",
+            fontFamily: "'Libre Baskerville', serif",
             fontSize: 'clamp(42px, 4.8vw, 90px)',
             fontWeight: 900, lineHeight: 1.0, color: '#fff',
             animation: 'heroIn 1s ease 0.5s both',
@@ -123,7 +123,7 @@ const Hero = () => {
         <p
           style={{
             marginTop: '22px', marginBottom: '38px',
-            color: 'rgba(255,255,255,0.6)',
+            color: 'rgba(255,255,255,0.7)',
             fontSize: '16px', lineHeight: 1.75,
             maxWidth: '500px',
             animation: 'heroIn 1s ease 0.75s both', fontWeight: 300,
