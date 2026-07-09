@@ -33,10 +33,11 @@ const Reviews = () => {
         {/* Card */}
         <div
           key={idx}
+          className="review-card"
           style={{
             background: 'rgba(255,255,255,0.03)',
             border: '1px solid rgba(242,187,60,0.22)',
-            borderRadius: 20, padding: '50px 60px',
+            borderRadius: 20,
             animation: 'fadeIn 0.6s ease',
           }}
         >
