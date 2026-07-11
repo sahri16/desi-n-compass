@@ -180,58 +180,58 @@ export const MENU_DATA = [
   // ─────────────────────────────────────
   // BBQ COLLECTION
   // ─────────────────────────────────────
-  {
-    category: 'BBQ Collection',
-    faIcon: 'fa-fire-burner',
-    items: [
-      { name: 'Seekh Kebab',   desc: 'Minced lamb with herbs, charcoal grilled',   price: 'AED 65',  img: FOOD_IMAGES.seekh,     tag: 'Bestseller' },
-      { name: 'Malai Boti',    desc: 'Cream-marinated chicken, melt-in-mouth',     price: 'AED 70',  img: FOOD_IMAGES.malai,     tag: 'Must Try'   },
-      { name: 'Chicken Tikka', desc: 'Tandoor-fired, smoky & bold flavours',       price: 'AED 60',  img: FOOD_IMAGES.tikka,     tag: 'Classic'    },
-      { name: 'Lamb Chops',    desc: 'French rack, papaya-tenderised marinade',    price: 'AED 140', img: FOOD_IMAGES.lambchops, tag: 'Premium'    },
-    ],
-  },
+  // {
+  //   category: 'BBQ Collection',
+  //   faIcon: 'fa-fire-burner',
+  //   items: [
+  //     { name: 'Seekh Kebab',   desc: 'Minced lamb with herbs, charcoal grilled',   price: 'AED 65',  img: FOOD_IMAGES.seekh,     tag: 'Bestseller' },
+  //     { name: 'Malai Boti',    desc: 'Cream-marinated chicken, melt-in-mouth',     price: 'AED 70',  img: FOOD_IMAGES.malai,     tag: 'Must Try'   },
+  //     { name: 'Chicken Tikka', desc: 'Tandoor-fired, smoky & bold flavours',       price: 'AED 60',  img: FOOD_IMAGES.tikka,     tag: 'Classic'    },
+  //     { name: 'Lamb Chops',    desc: 'French rack, papaya-tenderised marinade',    price: 'AED 140', img: FOOD_IMAGES.lambchops, tag: 'Premium'    },
+  //   ],
+  // },
 
   // ─────────────────────────────────────
   // DESI SPECIALS
   // ─────────────────────────────────────
-  {
-    category: 'Desi Specials',
-    faIcon: 'fa-bowl-food',
-    items: [
-      { name: 'Chicken Karahi', desc: 'Wok-tossed in tomatoes & fresh spices',          price: 'AED 85',  img: FOOD_IMAGES.karahi,  tag: "Chef's Pick" },
-      { name: 'Mutton Handi',   desc: 'Slow-cooked in clay pot, aromatic gravy',        price: 'AED 120', img: FOOD_IMAGES.handi,   tag: 'Signature'   },
-      { name: 'Dum Biryani',    desc: 'Fragrant basmati, saffron & whole spices',       price: 'AED 75',  img: FOOD_IMAGES.biryani, tag: 'Bestseller'  },
-      { name: 'Nihari',         desc: 'Overnight-simmered slow-braised shank',          price: 'AED 95',  img: FOOD_IMAGES.nihari,  tag: 'Heritage'    },
-    ],
-  },
+  // {
+  //   category: 'Desi Specials',
+  //   faIcon: 'fa-bowl-food',
+  //   items: [
+  //     { name: 'Chicken Karahi', desc: 'Wok-tossed in tomatoes & fresh spices',          price: 'AED 85',  img: FOOD_IMAGES.karahi,  tag: "Chef's Pick" },
+  //     { name: 'Mutton Handi',   desc: 'Slow-cooked in clay pot, aromatic gravy',        price: 'AED 120', img: FOOD_IMAGES.handi,   tag: 'Signature'   },
+  //     { name: 'Dum Biryani',    desc: 'Fragrant basmati, saffron & whole spices',       price: 'AED 75',  img: FOOD_IMAGES.biryani, tag: 'Bestseller'  },
+  //     { name: 'Nihari',         desc: 'Overnight-simmered slow-braised shank',          price: 'AED 95',  img: FOOD_IMAGES.nihari,  tag: 'Heritage'    },
+  //   ],
+  // },
 
   // ─────────────────────────────────────
   // INTERNATIONAL
   // ─────────────────────────────────────
-  {
-    category: 'International',
-    faIcon: 'fa-earth-americas',
-    items: [
-      { name: 'Wagyu Steak Platter',    desc: 'Grade A5, truffle butter, garlic jus',    price: 'AED 220', img: FOOD_IMAGES.steak,   tag: 'Premium' },
-      { name: 'Spiced Grilled Chicken', desc: "Za'atar rubbed, tahini & pomegranate",    price: 'AED 90',  img: FOOD_IMAGES.chicken, tag: 'Healthy' },
-      { name: 'Gourmet Burger',         desc: 'Aged beef, caramelised onion, gold bun',  price: 'AED 80',  img: FOOD_IMAGES.burger,  tag: 'Popular' },
-      { name: 'Truffle Pasta',          desc: 'Fresh pappardelle, black truffle, parm',  price: 'AED 95',  img: FOOD_IMAGES.pasta,   tag: 'Fusion'  },
-    ],
-  },
+  // {
+  //   category: 'International',
+  //   faIcon: 'fa-earth-americas',
+  //   items: [
+  //     { name: 'Wagyu Steak Platter',    desc: 'Grade A5, truffle butter, garlic jus',    price: 'AED 220', img: FOOD_IMAGES.steak,   tag: 'Premium' },
+  //     { name: 'Spiced Grilled Chicken', desc: "Za'atar rubbed, tahini & pomegranate",    price: 'AED 90',  img: FOOD_IMAGES.chicken, tag: 'Healthy' },
+  //     { name: 'Gourmet Burger',         desc: 'Aged beef, caramelised onion, gold bun',  price: 'AED 80',  img: FOOD_IMAGES.burger,  tag: 'Popular' },
+  //     { name: 'Truffle Pasta',          desc: 'Fresh pappardelle, black truffle, parm',  price: 'AED 95',  img: FOOD_IMAGES.pasta,   tag: 'Fusion'  },
+  //   ],
+  // },
 
   // ─────────────────────────────────────
   // BEVERAGES
   // ─────────────────────────────────────
-  {
-    category: 'Beverages',
-    faIcon: 'fa-mug-hot',
-    items: [
-      { name: 'Kashmiri Chai',      desc: 'Pink salt tea, cardamom & pistachios',   price: 'AED 25', img: FOOD_IMAGES.chai,         tag: 'Signature' },
-      { name: 'Arabic Coffee',      desc: 'Saffron-infused, dates on the side',     price: 'AED 20', img: FOOD_IMAGES.arabicCoffee, tag: 'Authentic' },
-      { name: 'Fresh Juices',       desc: 'Seasonal tropical blends, cold-pressed', price: 'AED 30', img: FOOD_IMAGES.juice,         tag: 'Healthy'   },
-      { name: 'Signature Mocktail', desc: 'Rose, lychee, mint & sparkling water',   price: 'AED 35', img: FOOD_IMAGES.mocktail,      tag: 'Special'   },
-    ],
-  },
+  // {
+  //   category: 'Beverages',
+  //   faIcon: 'fa-mug-hot',
+  //   items: [
+  //     { name: 'Kashmiri Chai',      desc: 'Pink salt tea, cardamom & pistachios',   price: 'AED 25', img: FOOD_IMAGES.chai,         tag: 'Signature' },
+  //     { name: 'Arabic Coffee',      desc: 'Saffron-infused, dates on the side',     price: 'AED 20', img: FOOD_IMAGES.arabicCoffee, tag: 'Authentic' },
+  //     { name: 'Fresh Juices',       desc: 'Seasonal tropical blends, cold-pressed', price: 'AED 30', img: FOOD_IMAGES.juice,         tag: 'Healthy'   },
+  //     { name: 'Signature Mocktail', desc: 'Rose, lychee, mint & sparkling water',   price: 'AED 35', img: FOOD_IMAGES.mocktail,      tag: 'Special'   },
+  //   ],
+  // },
 ];
 
 // ── Gallery Images ──
