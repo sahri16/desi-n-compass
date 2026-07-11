@@ -42,7 +42,7 @@ const NAV_COLS = [
   {
     title: 'Menu',
     links: [
-      { label: 'Desi Specials',   id: 'menu' },
+      { label: 'Breakfast Menu',   id: 'menu' },
       { label: 'BBQ Collection',  id: 'menu' },
       { label: 'International',   id: 'menu' },
       { label: 'Beverages',       id: 'menu' },
