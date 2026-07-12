@@ -163,7 +163,7 @@ const BlogPost = ({ slug, onBack }) => {
 
         }}
       >
-        <img src={post.image} alt={post.title} style={{ height: '100%' }} />
+        <img src={post.image} alt={post.title} loading="lazy" style={{ height: '100%' }} />
 
       </div>
 

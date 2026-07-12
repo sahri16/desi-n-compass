@@ -65,6 +65,7 @@ const Gallery = () => {
             <img
               src={GALLERY_IMAGES[lightbox].url.replace('w=500', 'w=900').replace('w=800', 'w=900')}
               alt={GALLERY_IMAGES[lightbox].label}
+              loading="lazy"
               style={{
                 width: '100%', height: '70vh',     objectFit: 'cover', borderRadius: 12, display: 'block',
                 border: '1px solid rgba(242,187,60,0.25)',
