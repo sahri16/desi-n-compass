@@ -115,7 +115,7 @@ const BlogList = ({ onOpenPost }) => {
                     }}
                   >
                     <img
-                      loading={index === 0 ? 'eager' : 'lazy'}
+                      loading="lazy"
                       decoding="async"
                       src={b.image}
                       alt={b.title}
