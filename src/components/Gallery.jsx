@@ -35,7 +35,7 @@ const Gallery = () => {
               style={{ gridColumn: img.span ? `span ${img.span}` : 'span 1' }}
               onClick={() => setLightbox(i)}
             >
-              <img src={img.url} alt={img.label} loading="lazy" />
+              <img src={img.url} alt={img.label} />
               <div className="gallery-overlay">
                 <i className="fa-solid fa-magnifying-glass-plus" style={{ color: COLORS.gold, fontSize: 24 }} />
                 <span style={{ color: '#fff', fontSize: 12, letterSpacing: '2px', textTransform: 'uppercase' }}>
@@ -65,7 +65,6 @@ const Gallery = () => {
             <img
               src={GALLERY_IMAGES[lightbox].url.replace('w=500', 'w=900').replace('w=800', 'w=900')}
               alt={GALLERY_IMAGES[lightbox].label}
-              loading="lazy"
               style={{
                 width: '100%', height: '70vh',     objectFit: 'cover', borderRadius: 12, display: 'block',
                 border: '1px solid rgba(242,187,60,0.25)',

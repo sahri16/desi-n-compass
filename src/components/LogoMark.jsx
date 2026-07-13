@@ -17,7 +17,7 @@ const LogoMark = ({ size = 'md' }) => {
         }}
       >
         
-        <img src="./assets/logo.png" alt="Logo" width={sm ? 30 : 40} loading="lazy" />
+        <img src="./assets/logo.png" alt="Logo" width={sm ? 30 : 40} />
       </div>
       <div>
         <div

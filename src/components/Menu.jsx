@@ -89,7 +89,6 @@ const Menu = ({ openFullMenu }) => {
                       className="menu-img"
                       src={item.img}
                       alt={item.name}
-                      loading="lazy"
                       onError={(e) => { e.target.style.display = 'none'; }}
                     />
                     {/* Tag */}
