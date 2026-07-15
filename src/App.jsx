@@ -16,12 +16,16 @@ import Footer from './components/Footer';
 import Breadcrumbs from './components/Breadcrumbs';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import CustomCursor from './components/CustomCursor';
+import { getMenuPathFromCategoryIndex, getMenuRouteStateFromPath } from './data/constants';
 
 function App() {
   const [loaded, setLoaded] = useState(false);
   const [location, setLocation] = useState(
     () => `${window.location.pathname}${window.location.search}`
   );
+
+  const pathname = location.split('?')[0].toLowerCase();
+  const menuRoute = getMenuRouteStateFromPath(location);
 
   useEffect(() => {
     const onPopState = () =>
@@ -45,9 +49,9 @@ function App() {
     return null;
   };
 
-  const isMenuRoute = location.split('?')[0].toLowerCase() === '/menu';
-  const isBlogListRoute = location.split('?')[0].toLowerCase() === '/blog';
-  const isBlogPostRoute = location.split('?')[0].toLowerCase().startsWith('/blog/');
+  const isMenuRoute = menuRoute.isMenuRoute;
+  const isBlogListRoute = pathname === '/blog';
+  const isBlogPostRoute = pathname.startsWith('/blog/');
   const postSlug = getSlugFromPath();
 
   return (
@@ -64,13 +68,15 @@ function App() {
         }}
       >
         <CustomCursor />
-        <Navbar onNavigateMenu={() => navigate('/menu?cat=0')} navigate={navigate} />
+        <Navbar onNavigateMenu={() => navigate(getMenuPathFromCategoryIndex(0))} navigate={navigate} />
         <Breadcrumbs />
 
         {isMenuRoute ? (
           <MenuPage
-            initialCategory={Number(new URLSearchParams(location.split('?')[1]).get('cat')) || 0}
+            initialCategory={menuRoute.initialCategory}
+            initialSubCategory={menuRoute.initialSubCategory}
             onBack={() => navigate('/')}
+            onNavigate={navigate}
           />
         ) : isBlogPostRoute ? (
           <BlogPost slug={postSlug} onBack={() => navigate('/blog')} />
@@ -80,7 +86,7 @@ function App() {
           <>
             <section id="hero"><Hero /></section>
             <section id="about"><About /></section>
-            <section id="menu"><Menu openFullMenu={() => navigate('/menu?cat=0')} /></section>
+            <section id="menu"><Menu openFullMenu={(categoryIndex) => navigate(getMenuPathFromCategoryIndex(categoryIndex))} /></section>
             <section id="gallery"><Gallery /></section>
             <section id="why-us"><WhyUs /></section>
             <section id="reviews"><Reviews /></section>

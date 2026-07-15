@@ -5,6 +5,100 @@ export const COLORS = {
   black: '#1A0F10',
 };
 
+export const BREAKFAST_CATEGORY_NAMES = [
+  'DC Special Breakfast',
+  'Pratha',
+  'Omelette',
+  'South Indian',
+  'Curry',
+  'Sat-Sun Special',
+];
+
+export const BREAKFAST_GROUP_SLUG = 'breakfast';
+
+const slugifyCategory = (value = '') =>
+  value
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/(^-|-$)/g, '');
+
+export const getMenuSlug = (categoryName = '') => slugifyCategory(categoryName);
+
+export const getMenuPathFromCategoryIndex = (categoryIndex = 0) => {
+  const categoryName = MENU_DATA[categoryIndex]?.category;
+  if (!categoryName) return '/menu';
+
+  const breakfastIndex = BREAKFAST_CATEGORY_NAMES.indexOf(categoryName);
+  // if (breakfastIndex === 0) return `/menu/${BREAKFAST_GROUP_SLUG}`;
+  if (breakfastIndex !== -1) return `/menu/${BREAKFAST_GROUP_SLUG}/${getMenuSlug(categoryName)}`;
+
+  return `/menu/${getMenuSlug(categoryName)}`;
+};
+
+export const getMenuPathFromSelection = ({ activeGroupIdx = 0, activeSubIdx = 0, currentCategoryName = '' } = {}) => {
+  if (activeGroupIdx === 0) {
+    const categoryName = currentCategoryName || BREAKFAST_CATEGORY_NAMES[activeSubIdx] || BREAKFAST_CATEGORY_NAMES[0];
+    if (activeSubIdx === 0) return `/menu/${BREAKFAST_GROUP_SLUG}`;
+    return `/menu/${BREAKFAST_GROUP_SLUG}/${getMenuSlug(categoryName)}`;
+  }
+
+  return `/menu/${getMenuSlug(currentCategoryName || '')}`.replace(/\/menu\/$/, '/menu');
+};
+
+export const getMenuRouteStateFromPath = (pathname = '') => {
+  const cleanPath = pathname.split('?')[0].toLowerCase();
+  const normalizedPath = cleanPath.replace(/\/+$/, '');
+  const pathParts = normalizedPath.split('/').filter(Boolean);
+
+  if (pathParts[0] !== 'menu') {
+    return { isMenuRoute: false, initialCategory: 0, initialSubCategory: 0 };
+  }
+
+  const slug = pathParts[1];
+  const nestedSlug = pathParts[2];
+  const searchParams = new URLSearchParams(pathname.split('?')[1] || '');
+  const legacyCat = searchParams.get('cat');
+
+  if (!slug && legacyCat !== null) {
+    return { isMenuRoute: true, initialCategory: Number(legacyCat) || 0, initialSubCategory: 0 };
+  }
+
+  if (!slug) {
+    return { isMenuRoute: true, initialCategory: 0, initialSubCategory: 0 };
+  }
+
+  if (slug === BREAKFAST_GROUP_SLUG) {
+    if (nestedSlug) {
+      const breakfastIndex = BREAKFAST_CATEGORY_NAMES.findIndex(
+        (category) => getMenuSlug(category) === nestedSlug,
+      );
+
+      if (breakfastIndex !== -1) {
+        return { isMenuRoute: true, initialCategory: 0, initialSubCategory: breakfastIndex };
+      }
+    }
+
+    return { isMenuRoute: true, initialCategory: 0, initialSubCategory: 0 };
+  }
+
+  const breakfastIndex = BREAKFAST_CATEGORY_NAMES.findIndex(
+    (category) => getMenuSlug(category) === slug,
+  );
+
+  if (breakfastIndex !== -1) {
+    return { isMenuRoute: true, initialCategory: 0, initialSubCategory: breakfastIndex };
+  }
+
+  const categoryIndex = MENU_DATA.findIndex((category) => getMenuSlug(category.category) === slug);
+
+  if (categoryIndex !== -1) {
+    return { isMenuRoute: true, initialCategory: categoryIndex + 1, initialSubCategory: 0 };
+  }
+
+  return { isMenuRoute: true, initialCategory: 0, initialSubCategory: 0 };
+};
+
 // ── Food Images (Unsplash) ──
 export const FOOD_IMAGES = {
   karahi:       'https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=400&q=80',

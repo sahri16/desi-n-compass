@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { COLORS, MENU_DATA } from '../data/constants';
+import { BREAKFAST_CATEGORY_NAMES, COLORS, MENU_DATA, getMenuPathFromSelection } from '../data/constants';
 import LogoMark from './LogoMark';
 import WhatsAppButton from "./WhatsAppButton";
 
@@ -8,14 +8,7 @@ const BLACK = COLORS.black;
 
 // ── Grouped Menu Structure ──
 // Breakfast groups mein split hoga, baaki alag rahenge
-const BREAKFAST_CATEGORIES = [
-  'DC Special Breakfast',
-  'Pratha',
-  'Omelette',
-  'South Indian',
-  'Curry',
-  'Sat-Sun Special',
-];
+const BREAKFAST_CATEGORIES = BREAKFAST_CATEGORY_NAMES;
 
 const buildGrouped = () => {
   const breakfastItems = MENU_DATA.filter(c => BREAKFAST_CATEGORIES.includes(c.category));
@@ -104,15 +97,16 @@ const MenuCard = ({ item, categoryName }) => {
 };
 
 // ── Main Full Menu Page ──
-const FullMenuPage = ({ initialCategory = 0, onClose }) => {
+const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, onNavigate }) => {
   // Active group index (0 = Breakfast group, 1+ = other categories)
   const [activeGroupIdx,  setActiveGroupIdx]  = useState(0);
   // Active sub-category inside Breakfast group
-  const [activeSubIdx,    setActiveSubIdx]    = useState(0);
+  const [activeSubIdx,    setActiveSubIdx]    = useState(initialSubCategory);
   // Is breakfast dropdown open in sidebar
   const [breakfastOpen,   setBreakfastOpen]   = useState(true);
   const [sidebarOpen,     setSidebarOpen]     = useState(false);
   const [scrolled,        setScrolled]        = useState(false);
+  const [transitionKey,   setTransitionKey]   = useState(0);
 
   // Lock body scroll
   useEffect(() => {
@@ -126,14 +120,41 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
     const bfLength = BREAKFAST_CATEGORIES.length;
     if (initialCategory < bfLength) {
       setActiveGroupIdx(0);
-      setActiveSubIdx(initialCategory);
+      setActiveSubIdx(initialSubCategory);
       setBreakfastOpen(true);
+      setTransitionKey((prev) => prev + 1);
     } else {
       // Map to correct group index
       const otherIdx = initialCategory - bfLength;
       setActiveGroupIdx(otherIdx + 1);
+      setActiveSubIdx(0);
+      setTransitionKey((prev) => prev + 1);
     }
-  }, [initialCategory]);
+  }, [initialCategory, initialSubCategory]);
+
+  const activeGroup = GROUPED[activeGroupIdx];
+  const currentCat = activeGroup?.isGroup
+    ? activeGroup.subCategories[activeSubIdx]
+    : activeGroup?.data;
+
+  useEffect(() => {
+    if (!onNavigate) return;
+
+    const targetPath = getMenuPathFromSelection({
+      activeGroupIdx,
+      activeSubIdx,
+      currentCategoryName: currentCat?.category,
+    });
+    const currentPath = `${window.location.pathname}${window.location.search}`;
+
+    if (currentPath !== targetPath && !(activeGroupIdx === 0 && activeSubIdx === 0 && currentPath === '/menu/breakfast')) {
+      const timeoutId = window.setTimeout(() => {
+        onNavigate(targetPath);
+      }, 0);
+
+      return () => window.clearTimeout(timeoutId);
+    }
+  }, [activeGroupIdx, activeSubIdx, currentCat?.category, onNavigate]);
 
   const handleContainerScroll = (e) => setScrolled(e.target.scrollTop > 20);
 
@@ -141,12 +162,6 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
     onClose();
     setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 300);
   };
-
-  // Current display data
-  const activeGroup = GROUPED[activeGroupIdx];
-  const currentCat  = activeGroup?.isGroup
-    ? activeGroup.subCategories[activeSubIdx]
-    : activeGroup?.data;
 
   if (!currentCat) return null;
 
@@ -483,7 +498,7 @@ const FullMenuPage = ({ initialCategory = 0, onClose }) => {
         >
           <main
             className="fm-main-pad"
-            key={`${activeGroupIdx}-${activeSubIdx}`}
+            key={`${activeGroupIdx}-${activeSubIdx}-${transitionKey}`}
             style={{ padding: '44px 48px 80px', animation: 'fadeUp 0.4s ease' }}
           >
             {/* Breadcrumb */}
