@@ -39,7 +39,6 @@ export const getMenuPathFromCategoryIndex = (categoryIndex = 0) => {
 export const getMenuPathFromSelection = ({ activeGroupIdx = 0, activeSubIdx = 0, currentCategoryName = '' } = {}) => {
   if (activeGroupIdx === 0) {
     const categoryName = currentCategoryName || BREAKFAST_CATEGORY_NAMES[activeSubIdx] || BREAKFAST_CATEGORY_NAMES[0];
-    if (activeSubIdx === 0) return `/menu/${BREAKFAST_GROUP_SLUG}`;
     return `/menu/${BREAKFAST_GROUP_SLUG}/${getMenuSlug(categoryName)}`;
   }
 

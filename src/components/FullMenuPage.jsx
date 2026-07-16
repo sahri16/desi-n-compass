@@ -106,7 +106,7 @@ const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, on
   const [breakfastOpen,   setBreakfastOpen]   = useState(true);
   const [sidebarOpen,     setSidebarOpen]     = useState(false);
   const [scrolled,        setScrolled]        = useState(false);
-  const [transitionKey,   setTransitionKey]   = useState(0);
+  // const [transitionKey,   setTransitionKey]   = useState(0);
 
   // Lock body scroll
   useEffect(() => {
@@ -118,18 +118,30 @@ const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, on
   // If initialCategory is a breakfast sub-cat index, open breakfast group
   useEffect(() => {
     const bfLength = BREAKFAST_CATEGORIES.length;
+    let nextGroupIdx;
+    let nextSubIdx;
+
     if (initialCategory < bfLength) {
-      setActiveGroupIdx(0);
-      setActiveSubIdx(initialSubCategory);
-      setBreakfastOpen(true);
-      setTransitionKey((prev) => prev + 1);
+      nextGroupIdx = 0;
+      nextSubIdx = initialSubCategory;
     } else {
       // Map to correct group index
       const otherIdx = initialCategory - bfLength;
-      setActiveGroupIdx(otherIdx + 1);
-      setActiveSubIdx(0);
-      setTransitionKey((prev) => prev + 1);
+      nextGroupIdx = otherIdx + 1;
+      nextSubIdx = 0;
     }
+
+    // Skip if this is just the URL-sync effect (below) echoing back the
+    // same selection we already set from a sidebar click — otherwise we'd
+    // bump transitionKey and remount/re-animate the content on every click,
+    // which is what made navigation feel jerky/not-smooth.
+    if (nextGroupIdx === activeGroupIdx && nextSubIdx === activeSubIdx) return;
+
+   setActiveGroupIdx(nextGroupIdx);
+setActiveSubIdx(nextSubIdx);
+if (nextGroupIdx === 0) setBreakfastOpen(true);
+    // setTransitionKey((prev) => prev + 1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [initialCategory, initialSubCategory]);
 
   const activeGroup = GROUPED[activeGroupIdx];
@@ -146,17 +158,20 @@ const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, on
       currentCategoryName: currentCat?.category,
     });
     const currentPath = `${window.location.pathname}${window.location.search}`;
-
-    if (currentPath !== targetPath && !(activeGroupIdx === 0 && activeSubIdx === 0 && currentPath === '/menu/breakfast')) {
-      const timeoutId = window.setTimeout(() => {
-        onNavigate(targetPath);
-      }, 0);
-
-      return () => window.clearTimeout(timeoutId);
-    }
+if (currentPath !== targetPath) {
+    onNavigate(targetPath);
+}
   }, [activeGroupIdx, activeSubIdx, currentCat?.category, onNavigate]);
 
   const handleContainerScroll = (e) => setScrolled(e.target.scrollTop > 20);
+
+  // Scroll to top when category changes
+  useEffect(() => {
+    const container = document.querySelector('.fm-content-scroll');
+    if (container) {
+      container.scrollTop = 0;
+    }
+  }, [activeGroupIdx, activeSubIdx]);
 
   const goToContact = () => {
     onClose();
@@ -394,13 +409,20 @@ const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, on
         }
         .fm-back-btn:hover { color:#fff;border-color:rgba(255,255,255,0.35); }
 
-        .fm-content-scroll { overflow-y:auto;height:100%; }
+        .fm-content-scroll { 
+          overflow-y:auto;height:100%;scroll-behavior:smooth; 
+        }
         .fm-content-scroll::-webkit-scrollbar { width:4px; }
         .fm-content-scroll::-webkit-scrollbar-thumb { background:#F2BB3C;border-radius:2px; }
 
         .fm-sidebar-scroll { overflow-y:auto;height:100%; }
         .fm-sidebar-scroll::-webkit-scrollbar { width:3px; }
         .fm-sidebar-scroll::-webkit-scrollbar-thumb { background:rgba(242,187,60,0.3);border-radius:2px; }
+
+        // .fm-main-pad {
+        //   animation:fadeUp 0.4s 
+        //   cubic-bezier(0.34, 1.56, 0.64, 1);
+        // }
 
         @media(max-width:768px){
           .fm-sidebar{display:none !important;}
@@ -497,9 +519,11 @@ const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, on
           style={{ flex: 1, minWidth: 0 }}
         >
           <main
+            // key={`${activeGroupIdx}-${activeSubIdx}`}
             className="fm-main-pad"
-            key={`${activeGroupIdx}-${activeSubIdx}-${transitionKey}`}
-            style={{ padding: '44px 48px 80px', animation: 'fadeUp 0.4s ease' }}
+            style={{ padding: '44px 48px 80px',
+              //  animation: 'fadeUp 0.4s ease',
+                willChange: 'opacity' }}
           >
             {/* Breadcrumb */}
             {activeGroup?.isGroup && (

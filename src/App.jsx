@@ -35,10 +35,13 @@ function App() {
   }, []);
 
   const navigate = (path) => {
-    window.history.pushState({}, '', path);
-    setLocation(`${window.location.pathname}${window.location.search}`);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const current = `${window.location.pathname}${window.location.search}`;
+
+  if (current === path) return;
+
+  window.history.pushState({}, '', path);
+  setLocation(path);
+};
 
   // Get slug from clean URL: /blog/slug
   const getSlugFromPath = () => {
