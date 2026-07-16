@@ -2,8 +2,12 @@ import React from 'react';
 import LogoMark from './LogoMark';
 import { COLORS, SOCIAL_LINKS } from '../data/constants';
 
-const handleNavClick = (id) => {
-  // If the user clicks 'Blog', navigate to the blog route instead of scrolling
+const handleNavClick = (id, navigateToSection) => {
+  if (typeof navigateToSection === 'function') {
+    navigateToSection(id);
+    return;
+  }
+
   if (id === 'blog') {
     window.history.pushState({}, '', '/blog');
     window.dispatchEvent(new PopStateEvent('popstate'));
@@ -11,14 +15,11 @@ const handleNavClick = (id) => {
     return;
   }
 
-  // Check if we are currently on the Home page
   const isHomePage = window.location.pathname === '/';
 
   if (isHomePage) {
-    // Scroll smoothly if already on the homepage
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   } else {
-    // If on the blog page, go home first, then scroll to the section
     window.history.pushState({}, '', '/');
     window.dispatchEvent(new PopStateEvent('popstate'));
 
@@ -50,7 +51,7 @@ const NAV_COLS = [
   },
 ];
 
-const Footer = () => (
+const Footer = ({ navigateToSection }) => (
   <footer className='footer' style={{ background: '#0a0a0a', borderTop: '1px solid rgba(242,187,60,0.1)', padding: '60px 60px 28px' }}>
     <div
       className="footer-grid"
@@ -82,7 +83,7 @@ const Footer = () => (
           {col.links.map((link) => (
             <div
               key={link.label}
-              onClick={() => handleNavClick(link.id)} // Using the smart handler here
+              onClick={() => handleNavClick(link.id, navigateToSection)}
               style={{ color: 'rgba(255,255,255,0.7)', fontSize: 13, marginBottom: 10, cursor: 'pointer', fontWeight: 300, transition: 'color 0.2s' }}
               onMouseEnter={(e) => (e.target.style.color = COLORS.gold)}
               onMouseLeave={(e) => (e.target.style.color = 'rgba(255,255,255,0.6)')}

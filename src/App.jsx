@@ -34,28 +34,78 @@ function App() {
     return () => window.removeEventListener('popstate', onPopState);
   }, []);
 
+  const getSectionIdFromPath = (path = pathname) => {
+    const cleanPath = path.split('?')[0].toLowerCase().replace(/\/+$/, '');
+
+    if (cleanPath === '/about') return 'about';
+    if (cleanPath === '/gallery') return 'gallery';
+    if (cleanPath === '/contact' || cleanPath === '/contact-us') return 'contact';
+    if (cleanPath === '/why-us') return 'why-us';
+    if (cleanPath === '/reviews') return 'reviews';
+    if (cleanPath === '/reservation') return 'reservation';
+    if (cleanPath === '/hero') return 'hero';
+    if (cleanPath === '/menu') return 'menu';
+
+    return null;
+  };
+
   const navigate = (path) => {
-  const current = `${window.location.pathname}${window.location.search}`;
+    const current = `${window.location.pathname}${window.location.search}`;
 
-  if (current === path) return;
+    if (current === path) return;
 
-  window.history.pushState({}, '', path);
-  setLocation(path);
-};
+    window.history.pushState({}, '', path);
+    setLocation(path);
+  };
+
+  const navigateToSection = (id) => {
+    if (id === 'blog') {
+      navigate('/blog');
+      return;
+    }
+
+    if (id === 'home') {
+      navigate('/');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+
+    if (id === 'menu') {
+      navigate(getMenuPathFromCategoryIndex(0));
+      return;
+    }
+
+    navigate(`/${id}`);
+  };
 
   // Get slug from clean URL: /blog/slug
   const getSlugFromPath = () => {
-    const pathname = location.split('?')[0];
-    if (pathname.startsWith('/blog/')) {
-      return pathname.replace('/blog/', '');
+    const currentPath = location.split('?')[0];
+    if (currentPath.startsWith('/blog/')) {
+      return currentPath.replace('/blog/', '');
     }
     return null;
   };
 
+  const sectionId = getSectionIdFromPath(pathname);
   const isMenuRoute = menuRoute.isMenuRoute;
   const isBlogListRoute = pathname === '/blog';
   const isBlogPostRoute = pathname.startsWith('/blog/');
   const postSlug = getSlugFromPath();
+
+  useEffect(() => {
+    if (!loaded) return;
+
+    if (sectionId && !isMenuRoute && !isBlogPostRoute && !isBlogListRoute) {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        const top = element.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top, behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+  }, [loaded, sectionId, isMenuRoute, isBlogPostRoute, isBlogListRoute, location]);
 
   return (
     <>
@@ -71,7 +121,11 @@ function App() {
         }}
       >
         <CustomCursor />
-        <Navbar onNavigateMenu={() => navigate(getMenuPathFromCategoryIndex(0))} navigate={navigate} />
+        <Navbar
+          onNavigateMenu={() => navigate(getMenuPathFromCategoryIndex(0))}
+          navigate={navigate}
+          navigateToSection={navigateToSection}
+        />
         <Breadcrumbs />
 
         {isMenuRoute ? (
@@ -95,7 +149,7 @@ function App() {
             <section id="reviews"><Reviews /></section>
             <section id="reservation"><ReservationCTA /></section>
             <section id="contact"><Contact /></section>
-            <Footer />
+            <Footer navigateToSection={navigateToSection} />
             <WhatsAppFloat />
           </>
         )}

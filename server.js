@@ -1,14 +1,18 @@
+import path from 'path';
+import { fileURLToPath } from 'url';
 import express from 'express';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const PORT = process.env.PORT || 5000;
 const CONTACT_RECIPIENT = process.env.CONTACT_RECIPIENT;
 
 const app = express();
 app.use(express.json());
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
@@ -89,6 +93,14 @@ app.post('/api/contact', async (req, res) => {
       message: 'Unable to send email right now. Please try again later.',
     });
   }
+});
+
+app.get('*', (req, res) => {
+  if (req.path.startsWith('/api/')) {
+    return res.status(404).json({ success: false, message: 'API route not found.' });
+  }
+
+  return res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(PORT, () => {

@@ -6,7 +6,7 @@ const scrollTo = (id) => {
   document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
 };
 
-const Navbar = ({ onNavigateMenu, navigate }) => {
+const Navbar = ({ onNavigateMenu, navigate, navigateToSection }) => {
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
@@ -15,6 +15,26 @@ const Navbar = ({ onNavigateMenu, navigate }) => {
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
+
+  const handleLinkClick = (linkId) => {
+    if (typeof navigateToSection === 'function') {
+      navigateToSection(linkId);
+      setNavOpen(false);
+      return;
+    }
+
+    const isBlogPage = window.location.pathname.toLowerCase().startsWith('/blog');
+    if (linkId === 'blog' && typeof navigate === 'function') {
+      navigate('/blog');
+    } else if (isBlogPage && typeof navigate === 'function') {
+      navigate('/');
+      setTimeout(() => scrollTo(linkId), 120);
+    } else {
+      scrollTo(linkId);
+    }
+
+    setNavOpen(false);
+  };
 
   return (
     <>
@@ -38,7 +58,16 @@ const Navbar = ({ onNavigateMenu, navigate }) => {
         }}
       >
         {/* Logo */}
-        <div onClick={() => scrollTo('home')} style={{ cursor: 'pointer' }}>
+        <div
+          onClick={() => {
+            if (typeof navigateToSection === 'function') {
+              navigateToSection('home');
+            } else {
+              scrollTo('home');
+            }
+          }}
+          style={{ cursor: 'pointer' }}
+        >
           <LogoMark />
         </div>
 
@@ -48,17 +77,7 @@ const Navbar = ({ onNavigateMenu, navigate }) => {
             <span
               key={link.id}
               className="nav-link"
-              onClick={() => {
-                const isBlogPage = window.location.pathname.toLowerCase().startsWith('/blog');
-                if (link.id === 'blog' && typeof navigate === 'function') {
-                  navigate('/blog');
-                } else if (isBlogPage && typeof navigate === 'function') {
-                  navigate('/');
-                  setTimeout(() => scrollTo(link.id), 120);
-                } else {
-                  scrollTo(link.id);
-                }
-              }}
+              onClick={() => handleLinkClick(link.id)}
             >
               {link.label}
             </span>
@@ -116,20 +135,7 @@ const Navbar = ({ onNavigateMenu, navigate }) => {
               key={link.id}
               className="nav-link"
               style={{ fontSize: '14px' }}
-              onClick={() => {
-                const isBlogPage = window.location.pathname.toLowerCase().startsWith('/blog');
-                if (link.id === 'blog' && typeof navigate === 'function') {
-                  navigate('/blog');
-                  setNavOpen(false);
-                } else if (isBlogPage && typeof navigate === 'function') {
-                  navigate('/');
-                  setNavOpen(false);
-                  setTimeout(() => scrollTo(link.id), 120);
-                } else {
-                  scrollTo(link.id);
-                  setNavOpen(false);
-                }
-              }}
+              onClick={() => handleLinkClick(link.id)}
             >
               {link.label}
             </span>
