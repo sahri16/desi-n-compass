@@ -26,6 +26,7 @@ const About = () => (
           <img
             src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
             alt="Fine dining interior"
+            loading="lazy"
             style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0.75 }}
           />
           <div

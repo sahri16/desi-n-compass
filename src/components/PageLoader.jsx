@@ -117,6 +117,7 @@ const PageLoader = ({ onComplete }) => {
           <img
             src={logo}
             alt="Desi Compass"
+            loading="lazy"
             style={{ width: '100%', height: '100%', objectFit: 'contain' }}
           />
         </div>
