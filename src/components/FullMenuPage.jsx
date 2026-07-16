@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo, useCallback } from 'react';
 import { BREAKFAST_CATEGORY_NAMES, COLORS, MENU_DATA, getMenuPathFromSelection } from '../data/constants';
 import LogoMark from './LogoMark';
 import WhatsAppButton from "./WhatsAppButton";
@@ -97,113 +97,17 @@ const MenuCard = ({ item, categoryName }) => {
 };
 
 // ── Main Full Menu Page ──
-const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, onNavigate }) => {
-  // Active group index (0 = Breakfast group, 1+ = other categories)
-  const [activeGroupIdx,  setActiveGroupIdx]  = useState(0);
-  // Active sub-category inside Breakfast group
-  const [activeSubIdx,    setActiveSubIdx]    = useState(initialSubCategory);
-  // Is breakfast dropdown open in sidebar
-  const [breakfastOpen,   setBreakfastOpen]   = useState(true);
-  const [sidebarOpen,     setSidebarOpen]     = useState(false);
-  const [scrolled,        setScrolled]        = useState(false);
-  // const [transitionKey,   setTransitionKey]   = useState(0);
-
-  // Lock body scroll
-  useEffect(() => {
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = 'hidden';
-    return () => { document.body.style.overflow = prev; };
-  }, []);
-
-  // If initialCategory is a breakfast sub-cat index, open breakfast group
-  useEffect(() => {
-    const bfLength = BREAKFAST_CATEGORIES.length;
-    let nextGroupIdx;
-    let nextSubIdx;
-
-    if (initialCategory < bfLength) {
-      nextGroupIdx = 0;
-      nextSubIdx = initialSubCategory;
-    } else {
-      // Map to correct group index
-      const otherIdx = initialCategory - bfLength;
-      nextGroupIdx = otherIdx + 1;
-      nextSubIdx = 0;
-    }
-
-    // Skip if this is just the URL-sync effect (below) echoing back the
-    // same selection we already set from a sidebar click — otherwise we'd
-    // bump transitionKey and remount/re-animate the content on every click,
-    // which is what made navigation feel jerky/not-smooth.
-    if (nextGroupIdx === activeGroupIdx && nextSubIdx === activeSubIdx) return;
-
-   setActiveGroupIdx(nextGroupIdx);
-setActiveSubIdx(nextSubIdx);
-if (nextGroupIdx === 0) setBreakfastOpen(true);
-    // setTransitionKey((prev) => prev + 1);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [initialCategory, initialSubCategory]);
-
-  const activeGroup = GROUPED[activeGroupIdx];
-  const currentCat = activeGroup?.isGroup
-    ? activeGroup.subCategories[activeSubIdx]
-    : activeGroup?.data;
-
-  useEffect(() => {
-    if (!onNavigate) return;
-
-    const targetPath = getMenuPathFromSelection({
-      activeGroupIdx,
-      activeSubIdx,
-      currentCategoryName: currentCat?.category,
-    });
-    const currentPath = `${window.location.pathname}${window.location.search}`;
-if (currentPath !== targetPath) {
-    onNavigate(targetPath);
-}
-  }, [activeGroupIdx, activeSubIdx, currentCat?.category, onNavigate]);
-
-  const handleContainerScroll = (e) => setScrolled(e.target.scrollTop > 20);
-
-  // Scroll to top when category changes
-  useEffect(() => {
-    const container = document.querySelector('.fm-content-scroll');
-    if (container) {
-      container.scrollTop = 0;
-    }
-  }, [activeGroupIdx, activeSubIdx]);
-
-  const goToContact = () => {
-    onClose();
-    setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 300);
-  };
-
-  if (!currentCat) return null;
-
-  const handleGroupClick = (gIdx) => {
-    const group = GROUPED[gIdx];
-    if (group.isGroup) {
-      // Toggle breakfast dropdown
-      if (activeGroupIdx === gIdx) {
-        setBreakfastOpen(o => !o);
-      } else {
-        setActiveGroupIdx(gIdx);
-        setActiveSubIdx(0);
-        setBreakfastOpen(true);
-      }
-    } else {
-      setActiveGroupIdx(gIdx);
-      setSidebarOpen(false);
-    }
-  };
-
-  const handleSubClick = (subIdx) => {
-    setActiveGroupIdx(0);
-    setActiveSubIdx(subIdx);
-    setSidebarOpen(false);
-  };
-
-  const SidebarContent = () => (
+const SidebarContent = memo(function SidebarContent({
+  activeGroupIdx,
+  activeSubIdx,
+  activeGroup,
+  breakfastOpen,
+  handleGroupClick,
+  handleSubClick,
+  goToContact,
+  groupedItems,
+}) {
+  return (
     <>
       {/* Header */}
       <div style={{ marginBottom: 24 }}>
@@ -218,7 +122,7 @@ if (currentPath !== targetPath) {
 
       {/* Nav */}
       <nav style={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-        {GROUPED.map((group, gIdx) => {
+        {groupedItems.map((group, gIdx) => {
           const isActiveGroup = activeGroupIdx === gIdx;
 
           if (group.isGroup) {
@@ -371,6 +275,116 @@ if (currentPath !== targetPath) {
       </div>
     </>
   );
+});
+
+const FullMenuPage = ({ initialCategory = 0, initialSubCategory = 0, onClose, onNavigate }) => {
+  // Active group index (0 = Breakfast group, 1+ = other categories)
+  const [activeGroupIdx,  setActiveGroupIdx]  = useState(0);
+  // Active sub-category inside Breakfast group
+  const [activeSubIdx,    setActiveSubIdx]    = useState(initialSubCategory);
+  // Is breakfast dropdown open in sidebar
+  const [breakfastOpen,   setBreakfastOpen]   = useState(true);
+  const [sidebarOpen,     setSidebarOpen]     = useState(false);
+  const [scrolled,        setScrolled]        = useState(false);
+  // const [transitionKey,   setTransitionKey]   = useState(0);
+
+  // Lock body scroll
+  useEffect(() => {
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = prev; };
+  }, []);
+
+  // If initialCategory is a breakfast sub-cat index, open breakfast group
+  useEffect(() => {
+    const bfLength = BREAKFAST_CATEGORIES.length;
+    let nextGroupIdx;
+    let nextSubIdx;
+
+    if (initialCategory < bfLength) {
+      nextGroupIdx = 0;
+      nextSubIdx = initialSubCategory;
+    } else {
+      // Map to correct group index
+      const otherIdx = initialCategory - bfLength;
+      nextGroupIdx = otherIdx + 1;
+      nextSubIdx = 0;
+    }
+
+    // Skip if this is just the URL-sync effect (below) echoing back the
+    // same selection we already set from a sidebar click — otherwise we'd
+    // bump transitionKey and remount/re-animate the content on every click,
+    // which is what made navigation feel jerky/not-smooth.
+    if (nextGroupIdx === activeGroupIdx && nextSubIdx === activeSubIdx) return;
+
+   setActiveGroupIdx(nextGroupIdx);
+setActiveSubIdx(nextSubIdx);
+if (nextGroupIdx === 0) setBreakfastOpen(true);
+    // setTransitionKey((prev) => prev + 1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialCategory, initialSubCategory]);
+
+  const activeGroup = GROUPED[activeGroupIdx];
+  const currentCat = activeGroup?.isGroup
+    ? activeGroup.subCategories[activeSubIdx]
+    : activeGroup?.data;
+
+  useEffect(() => {
+    if (!onNavigate) return;
+
+    const targetPath = getMenuPathFromSelection({
+      activeGroupIdx,
+      activeSubIdx,
+      currentCategoryName: currentCat?.category,
+    });
+    const currentPath = `${window.location.pathname}${window.location.search}`;
+if (currentPath !== targetPath) {
+    onNavigate(targetPath);
+}
+  }, [activeGroupIdx, activeSubIdx, currentCat?.category, onNavigate]);
+
+  const handleContainerScroll = useCallback((e) => {
+    const nextScrolled = e.target.scrollTop > 20;
+    setScrolled(prev => (prev === nextScrolled ? prev : nextScrolled));
+  }, []);
+
+  // Scroll to top when category changes
+  useEffect(() => {
+    const container = document.querySelector('.fm-content-scroll');
+    if (container) {
+      container.scrollTop = 0;
+    }
+  }, [activeGroupIdx, activeSubIdx]);
+
+  const goToContact = useCallback(() => {
+    onClose();
+    setTimeout(() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }), 300);
+  }, [onClose]);
+
+  if (!currentCat) return null;
+
+  const handleGroupClick = useCallback((gIdx) => {
+    const group = GROUPED[gIdx];
+    if (group.isGroup) {
+      // Toggle breakfast dropdown
+      if (activeGroupIdx === gIdx) {
+        setBreakfastOpen(o => !o);
+      } else {
+        setActiveGroupIdx(gIdx);
+        setActiveSubIdx(0);
+        setBreakfastOpen(true);
+      }
+    } else {
+      setActiveGroupIdx(gIdx);
+      setSidebarOpen(false);
+    }
+  }, [activeGroupIdx]);
+
+  const handleSubClick = useCallback((subIdx) => {
+    setActiveGroupIdx(0);
+    setActiveSubIdx(subIdx);
+    setSidebarOpen(false);
+  }, []);
 
   return (
     <div style={{
@@ -488,7 +502,16 @@ if (currentPath !== targetPath) {
           display: 'flex', flexDirection: 'column',
         }}>
           <div className="fm-sidebar-scroll" style={{ flex: 1, padding: '24px 14px' }}>
-            <SidebarContent />
+            <SidebarContent
+              activeGroupIdx={activeGroupIdx}
+              activeSubIdx={activeSubIdx}
+              activeGroup={activeGroup}
+              breakfastOpen={breakfastOpen}
+              handleGroupClick={handleGroupClick}
+              handleSubClick={handleSubClick}
+              goToContact={goToContact}
+              groupedItems={GROUPED}
+            />
           </div>
         </aside>
 
@@ -507,7 +530,16 @@ if (currentPath !== targetPath) {
                 animation: 'slideIn 0.3s ease',
               }}
             >
-              <SidebarContent />
+              <SidebarContent
+                activeGroupIdx={activeGroupIdx}
+                activeSubIdx={activeSubIdx}
+                activeGroup={activeGroup}
+                breakfastOpen={breakfastOpen}
+                handleGroupClick={handleGroupClick}
+                handleSubClick={handleSubClick}
+                goToContact={goToContact}
+                groupedItems={GROUPED}
+              />
             </div>
           </div>
         )}
