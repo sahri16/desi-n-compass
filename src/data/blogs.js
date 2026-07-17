@@ -320,7 +320,7 @@ export const BLOGS = [
 
 <ul>
   <li>Come hungry, the portions are made for big appetites.</li>
-  <li>Try the <a href="https://desicompass.ae/menu/breakfast/sat-sun-special">weekend lunch specials or combo platters</a> for extra value.</li>
+  <li>Try the <a href="https://desicompass.ae/menu/breakfast/sat-sun-special">weekend breakfast specials</a>or breakfast combo platters for extra value. </li>
   <li>Ask for "medium" spice if you're not used to full desi heat.</li>
   <li>Pair your meal with fresh lassi or rose falooda for a perfect ending.</li>
   <li>Great for both dine-in and takeaway, ideal after a long day in Dubai.</li>
