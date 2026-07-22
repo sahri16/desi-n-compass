@@ -365,13 +365,13 @@ export const BLOGS = [
     title: 'Best Indian Restaurant Near Al Barsha Metro Station Dubai',
     metaTitle: 'Desi Compass: Best Indian Restaurant Near Al Barsha Metro Station | South Indian & Halal Food Dubai',
     metaDescription: 'Looking for the best Indian restaurant near Al Barsha Metro Station? Desi Compass offers authentic South Indian flavors, signature biryani, butter chicken, and family dining in Dubai. Halal, fresh, and conveniently located near Mall of the Emirates.',
-    summary: 'Searching for a reliable spot after exiting Al Barsha Metro Station? <strong>Desi Compass</strong> stands out as the best Indian restaurant near Al Barsha Metro Station, delivering genuine flavors that satisfy cravings for home-style Indian food in Dubai.',
+    summary: 'Searching for a reliable spot after exiting Al Barsha Metro Station? Desi Compass stands out as the best Indian restaurant near Al Barsha Metro Station, delivering genuine flavors that satisfy cravings for home-style Indian food in Dubai.',
     date: '2026-07-11',
     image: '/assets/4.jpeg',
     content: `
 <h1>Best Indian Restaurant Near Al Barsha Metro Station Dubai</h1>
 
-<p>Searching for a reliable spot after exiting Al Barsha Metro Station? <strong>Desi Compass</strong> stands out as the best Indian restaurant near Al Barsha Metro Station, delivering genuine flavors that satisfy cravings for home-style Indian food in Dubai.</p>
+<p>Searching for a reliable spot after exiting Al Barsha Metro Station? Desi Compass stands out as the best Indian restaurant near Al Barsha Metro Station, delivering genuine flavors that satisfy cravings for home-style Indian food in Dubai.</p>
 
 <p>As a South Indian restaurant Dubai favorite, it combines crisp dosas, aromatic biryanis, and creamy curries in a welcoming space perfect for families and friends. Located conveniently near the Mall of the Emirates, Desi Compass serves halal Indian food to Dubai standards with fresh ingredients and traditional recipes passed down through generations. Whether you want quick bites or a relaxed meal, this spot consistently delivers on taste, value, and service.</p>
 
@@ -450,13 +450,13 @@ export const BLOGS = [
   title: 'Desi Compass: Best Restaurant in Al Barsha 1 for Birthday Parties & Family Celebrations',
   metaTitle: 'Desi Compass Al Barsha 1 – Best Restaurant for Birthday Parties & Family Celebrations in Dubai',
   metaDescription: 'Celebrate at Desi Compass, the best restaurant in Al Barsha 1 for birthday parties and family gatherings. Enjoy authentic Indian and Pakistani flavors, spacious family dining, and warm hospitality near Mall of the Emirates.',
-  summary: 'Searching for the best restaurant in Al Barsha 1 for a birthday party or family celebration? <strong>Desi Compass</strong> stands out as the top choice, a welcoming family restaurant in Al Barsha 1 that perfectly blends authentic Indian and Pakistani cuisine with a relaxed, festive atmosphere ideal for creating lasting memories.',
+  summary: 'Searching for the best restaurant in Al Barsha 1 for a birthday party or family celebration? Desi Compass stands out as the top choice, a welcoming family restaurant in Al Barsha 1 that perfectly blends authentic Indian and Pakistani cuisine with a relaxed, festive atmosphere ideal for creating lasting memories.',
   date: '2026-07-12',
   image: '/assets/5.jpeg',
   content: `
 <h1>Best Restaurant in Al Barsha 1 for Birthday Parties & Family Celebrations</h1>
 
-<p>Searching for the best restaurant in Al Barsha 1 for a birthday party or family celebration? <strong>Desi Compass</strong> stands out as the top choice, a welcoming family restaurant in Al Barsha 1 that perfectly blends authentic Indian and Pakistani cuisine with a relaxed, festive atmosphere ideal for creating lasting memories.</p>
+<p>Searching for the best restaurant in Al Barsha 1 for a birthday party or family celebration? Desi Compass stands out as the top choice, a welcoming family restaurant in Al Barsha 1 that perfectly blends authentic Indian and Pakistani cuisine with a relaxed, festive atmosphere ideal for creating lasting memories.</p>
 
 <p>Located conveniently near Mall of the Emirates, Desi Compass offers generous shareable dishes, attentive service, and flexible spaces that make it one of the most loved birthday celebration restaurants in Dubai. Whether it's a milestone birthday dinner or a casual family get-together, this spot delivers warmth, flavor, and convenience that families keep coming back for.</p>
 
