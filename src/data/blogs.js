@@ -23,7 +23,7 @@ export const BLOGS = [
 
 <h2>Why Al Barsha 1 is a Food Lover's Destination</h2>
 
-<p>Al Barsha 1 has become one of Dubai's most popular neighborhoods for dining. Its central location, vibrant atmosphere, and easy accessibility attract residents, tourists, and professionals looking for <a href="https://desicompass.ae/">quality restaurants.</a></p>
+<p>Al Barsha 1 has become one of Dubai's most popular neighborhoods for dining. Its central location, vibrant atmosphere, and easy accessibility attract residents, tourists, and professionals looking for   <a target="_blank" target="_blank" href="https://desicompass.ae/">quality restaurants.</a></p>
 
 <p>The area is especially well known for its diverse South Asian food scene, making it a favorite destination for anyone craving authentic Indian and Pakistani cuisine.</p>
 
@@ -39,7 +39,7 @@ export const BLOGS = [
 
 <h2>A Menu Inspired by the Best of India and Pakistan</h2>
 
-<p>Every dish on <a href="/menu">our menu</a> tells a story of tradition, culture, and flavor. Whether you're visiting for lunch, dinner, or a weekend family meal, you'll find something to satisfy every craving.</p>
+<p>Every dish on   <a target="_blank" target="_blank" href="/menu">our menu</a> tells a story of tradition, culture, and flavor. Whether you're visiting for lunch, dinner, or a weekend family meal, you'll find something to satisfy every craving.</p>
 
 <h3>Signature Biryani</h3>
 
@@ -79,7 +79,7 @@ export const BLOGS = [
 
 <h2>Fresh Halal Food You Can Trust</h2>
 
-<p>Great food starts with quality ingredients. At <a href="https://desicompass.ae/">Desi Compass</a>, every meal is prepared using halal ingredients while maintaining strict hygiene and food safety standards.</p>
+<p>Great food starts with quality ingredients. At   <a target="_blank" target="_blank" href="https://desicompass.ae/">Desi Compass</a>, every meal is prepared using halal ingredients while maintaining strict hygiene and food safety standards.</p>
 
 <p>From sourcing fresh produce to serving every dish at its best, our team is committed to delivering food that's both delicious and trustworthy. That's one of the reasons why families, residents, and visitors continue to choose Desi Compass for authentic halal dining in Dubai.</p>
 
@@ -93,7 +93,7 @@ export const BLOGS = [
 
 <p>Some occasions call for a refined dining experience, while others simply need a relaxed place to enjoy great food. Desi Compass offers the best of both.</p>
 
-<p>Our thoughtfully designed interiors, beautifully presented dishes, and attentive hospitality create a <a href="https://desicompass.ae/">premium dining atmosphere</a>, while our warm and welcoming environment keeps every visit comfortable and enjoyable. Whether it's a business lunch, date night, family dinner, or casual meal, Desi Compass is the perfect choice.</p>
+<p>Our thoughtfully designed interiors, beautifully presented dishes, and attentive hospitality create a   <a target="_blank" target="_blank" href="https://desicompass.ae/gallery">premium dining atmosphere</a>, while our warm and welcoming environment keeps every visit comfortable and enjoyable. Whether it's a business lunch, date night, family dinner, or casual meal, Desi Compass is the perfect choice.</p>
 
 <h2>Just Minutes from Mall of the Emirates</h2>
 
@@ -113,7 +113,7 @@ export const BLOGS = [
 <li>Premium-quality ingredients</li>
 <li>Skilled chefs with traditional cooking expertise</li>
 <li>Friendly and attentive customer service</li>
-<li>Comfortable <a href="https://desicompass.ae/gallery">family-friendly atmosphere</a></li>
+<li>Comfortable   <a target="_blank" target="_blank" href="https://desicompass.ae/gallery">family-friendly atmosphere</a></li>
 <li>Convenient Al Barsha 1 location</li>
 <li>Extensive vegetarian and non-vegetarian menu</li>
 <li>Excellent value for money</li>
@@ -177,7 +177,7 @@ export const BLOGS = [
 
 <p>Whether you're craving a comforting curry, a flavorful biryani, freshly grilled kebabs, or a complete family feast, our team is ready to serve you with exceptional food and genuine hospitality.</p>
 
-<p>Come and experience authentic halal dining at <a href="https://maps.app.goo.gl/sHR4gzxDHMjnr2Kw5">Desi Compass Restaurant & Cafe</a>.</p>
+<p>Come and experience authentic halal dining at   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/sHR4gzxDHMjnr2Kw5">Desi Compass Restaurant & Cafe</a>.</p>
 `,
   },
   {
@@ -198,7 +198,7 @@ export const BLOGS = [
 
 <h2>What Makes Desi Compass's Chicken Karahi Special?</h2>
 
-<p>At <a href="https://desicompass.ae/">Desi Compass</a>, the Traditional Chicken Karahi Dubai starts with premium fresh chicken and a secret blend of spices toasted in the karahi vessel for deep, layered flavors. The result is a vibrant, non-greasy gravy that clings perfectly to the meat, exactly what fans of Best Pakistani Chicken Karahi Dubai crave.</p>
+<p>At   <a target="_blank" target="_blank" href="https://desicompass.ae/">Desi Compass</a>, the Traditional Chicken Karahi Dubai starts with premium fresh chicken and a secret blend of spices toasted in the karahi vessel for deep, layered flavors. The result is a vibrant, non-greasy gravy that clings perfectly to the meat, exactly what fans of Best Pakistani Chicken Karahi Dubai crave.</p>
 
 <p>Every order is prepared fresh upon request, ensuring that signature smoky aroma and tenderness. Diners love pairing it with hot tandoori naan, garlic naan, or fluffy roti for a complete meal. This focus on quality and authenticity has quickly made Desi Compass a favorite for fresh chicken karahi in Dubai.</p>
 
@@ -210,14 +210,14 @@ export const BLOGS = [
 
 <h2>Exploring the Menu: More Than Just Karahi</h2>
 
-<p>While the best chicken karahi in Dubai draws crowds to Desi Compass, the restaurant excels across both classic Pakistani and <a href="https://desicompass.ae/menu/breakfast/south-indian">Indian dishes</a>. Expect juicy seekh kebabs and reshmi kebabs, fragrant mutton biryani or chicken dum biryani, butter chicken, dal makhani, paneer tikka masala, and comforting sides like naan, roti, raita, and fresh kachumber salad that perfectly complement your main.</p>
+<p>While the best chicken karahi in Dubai draws crowds to Desi Compass, the restaurant excels across both classic Pakistani and   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/south-indian">Indian dishes</a>. Expect juicy seekh kebabs and reshmi kebabs, fragrant mutton biryani or chicken dum biryani, butter chicken, dal makhani, paneer tikka masala, and comforting sides like naan, roti, raita, and fresh kachumber salad that perfectly complement your main.</p>
 
 <p>Portions are generous and prices are reasonable, offering excellent value for the quality. Whether dining in or ordering takeaway, the consistent taste and freshness reinforce why Desi Compass is rising as a top Pakistani restaurant in Dubai and a favorite for Indian-Pakistani fusion flavors.</p>
 
 <h2>Practical Tips for Your Visit to Desi Compass</h2>
 
 <h3>Location & Access</h3>
-<p>Easily reachable in <a href="https://maps.app.goo.gl/sHR4gzxDHMjnr2Kw5">Al Barsha 1</a>. Use rideshare apps or public transport near Mall of the Emirates for hassle-free arrival.</p>
+<p>Easily reachable in   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/sHR4gzxDHMjnr2Kw5">Al Barsha 1</a>. Use rideshare apps or public transport near Mall of the Emirates for hassle-free arrival.</p>
 
 <h3>Spice Preference</h3>
 <p>Inform the team if you want milder heat; they happily customize it to suit your taste.</p>
@@ -256,7 +256,7 @@ export const BLOGS = [
 
 <p>Next time hunger strikes for bold, comforting flavors, make your way to Desi Compass. You'll leave with a full stomach and a new favorite spot.</p>
 
-<p>Ready to taste the best? Visit<a href="https://maps.app.goo.gl/MutbChaRYV82JGEo9"> Desi Compass Restaurant & Cafe</a> in Al Barsha 1 today or call ahead to reserve your table. Follow us for specials, updates, and more mouthwatering desi delights. We can't wait to serve you the finest chicken karahi restaurant experience in Dubai!</p>
+<p>Ready to taste the best? Visit  <a target="_blank" target="_blank" href="https://maps.app.goo.gl/MutbChaRYV82JGEo9"> Desi Compass Restaurant & Cafe</a> in Al Barsha 1 today or call ahead to reserve your table. Follow us for specials, updates, and more mouthwatering desi delights. We can't wait to serve you the finest chicken karahi restaurant experience in Dubai!</p>
 
 <p><em>This guide reflects the passion and quality at Desi Compass as of 2026. Hours and menu items may vary; contact us directly for the latest details.</em></p>
 `,
@@ -279,7 +279,7 @@ export const BLOGS = [
 
 <h2>The Desi Compass Story: Tradition Meets Everyday Dubai Life</h2>
 
-<p>What makes Desi Compass special isn't just the food, it's the heart behind it. Inspired by bustling kitchens across Lahore, Karachi, and Mumbai, the team at Desi Compass brings generations of <a href="https://desicompass.ae/">family recipes to Dubai</a> while keeping prices real for locals and visitors alike.</p>
+<p>What makes Desi Compass special isn't just the food, it's the heart behind it. Inspired by bustling kitchens across Lahore, Karachi, and Mumbai, the team at Desi Compass brings generations of   <a target="_blank" target="_blank" href="https://desicompass.ae/">family recipes to Dubai</a> while keeping prices real for locals and visitors alike.</p>
 
 <p>Here, every dish tells a story. The slow-cooked biryanis carry the patience of traditional dum methods. The karahi bubbles with fresh spices ground daily. Even the humble dal feels elevated. This isn't fast food disguised as desi, it's honest, authentic Indian & Pakistani cuisine in Dubai that respects both heritage and your budget.</p>
 
@@ -306,7 +306,7 @@ export const BLOGS = [
 
 <h2>Why Families Love Desi Compass in Al Barsha</h2>
 
-<p>Desi Compass has earned its reputation as one of the <a href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">best family restaurants in Al Barsha 1</a>. With comfortable family seating, adjustable spice levels for kids, and a warm, no-fuss atmosphere, it feels welcoming rather than formal.</p>
+<p>Desi Compass has earned its reputation as one of the   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">best family restaurants in Al Barsha 1</a>. With comfortable family seating, adjustable spice levels for kids, and a warm, no-fuss atmosphere, it feels welcoming rather than formal.</p>
 
 <p>Its location near Mall of the Emirates makes it incredibly practical. Finish your shopping, avoid expensive mall restaurants, and enjoy real flavors at Desi Compass instead. As a fully alal Indian & Pakistani restaurant in Dubai, it caters to everyone seeking genuine taste.</p>
 
@@ -320,7 +320,7 @@ export const BLOGS = [
 
 <ul>
   <li>Come hungry, the portions are made for big appetites.</li>
-  <li>Try the <a href="https://desicompass.ae/menu/breakfast/sat-sun-special">weekend breakfast specials</a>or breakfast combo platters for extra value. </li>
+  <li>Try the   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/sat-sun-special">weekend breakfast specials</a> or breakfast combo platters for extra value. </li>
   <li>Ask for "medium" spice if you're not used to full desi heat.</li>
   <li>Pair your meal with fresh lassi or rose falooda for a perfect ending.</li>
   <li>Great for both dine-in and takeaway, ideal after a long day in Dubai.</li>
@@ -351,7 +351,7 @@ export const BLOGS = [
 
 <p>Next time hunger strikes near Mall of the Emirates or you simply want  where to eat affordable Indian & Pakistani food in Dubai, let your compass point to Desi Compass in Al Barsha 1.</p>
 
-<p>Ready for real flavors? Visit<a href="https://maps.app.goo.gl/MutbChaRYV82JGEo9"> Desi Compass Restaurant & Cafe</a> today and discover why so many are calling it their new go-to spot. Bring your family, bring your friends, and come with an empty stomach; you won't regret it.</p>
+<p>Ready for real flavors? Visit  <a target="_blank" target="_blank" href="https://maps.app.goo.gl/MutbChaRYV82JGEo9"> Desi Compass Restaurant & Cafe</a> today and discover why so many are calling it their new go-to spot. Bring your family, bring your friends, and come with an empty stomach; you won't regret it.</p>
 
 <p><em>Drop a comment below with your must-try dish at Desi Compass after your visit. We'd love to hear your story!</em></p>
 
@@ -377,7 +377,7 @@ export const BLOGS = [
 
 <h2>Why Desi Compass is the Go-To Indian Restaurant in Al Barsha</h2>
 
-<p>Al Barsha's lively vibe, proximity to the metro, and closeness to major landmarks make it ideal for great dining. <a href="/home">Desi Compass</a> captures this energy perfectly, offering a comfortable, family-oriented atmosphere where every dish feels thoughtfully prepared.</p>
+<p>Al Barsha's lively vibe, proximity to the metro, and closeness to major landmarks make it ideal for great dining.   <a target="_blank" target="_blank" href="/home">Desi Compass</a> captures this energy perfectly, offering a comfortable, family-oriented atmosphere where every dish feels thoughtfully prepared.</p>
 
 <p>Our team focuses on authenticity, using premium spices, fresh produce, and time-honored cooking methods. The result is food that respects regional Indian traditions while suiting Dubai's diverse palates. Diners appreciate the clean environment, attentive staff, and consistent quality that makes repeat visits easy.</p>
 
@@ -385,7 +385,7 @@ export const BLOGS = [
 
 <p>At Desi Compass, a South Indian restaurant, Dubai specialties take center stage. Our menu highlights light, flavorful vegetarian options alongside hearty favorites.</p>
 
-<p>Start your meal with <a href="https://desicompass.ae/menu/breakfast/south-indian">golden masala dosa</a>, paper-thin, crispy, filled with spiced potatoes, and served with coconut chutney and sambar. Pair it with soft idlis or crunchy medu vadas for a classic South Indian breakfast or lunch. Filtered coffee here is a must, strong, aromatic, and perfectly balanced.</p>
+<p>Start your meal with   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/south-indian">golden masala dosa</a>, paper-thin, crispy, filled with spiced potatoes, and served with coconut chutney and sambar. Pair it with soft idlis or crunchy medu vadas for a classic South Indian breakfast or lunch. Filtered coffee here is a must, strong, aromatic, and perfectly balanced.</p>
 
 <p>For something more filling, try our Uttapam loaded with vegetables or special thali platters that offer a complete taste of home. These dishes use fermented batters and fresh herbs, delivering that unmistakable homemade touch locals and visitors both love.</p>
 
@@ -405,7 +405,7 @@ export const BLOGS = [
 
 <h2>Signature Experiences at Desi Compass</h2>
 
-<p><a href="https://desicompass.ae/menu/breakfast">Beyond the menu</a>, Desi Compass offers memorable touches that elevate every visit. Our weekend specials often feature live tandoor demonstrations where you can watch chefs craft fresh naans and kebabs right at the counter, adding excitement, especially for kids and first-time guests.</p>
+<p>  <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast">Beyond the menu</a>, Desi Compass offers memorable touches that elevate every visit. Our weekend specials often feature live tandoor demonstrations where you can watch chefs craft fresh naans and kebabs right at the counter, adding excitement, especially for kids and first-time guests.</p>
 
 <p>Many regulars love our customizable spice levels, allowing mild preferences for children or bolder heat for spice enthusiasts. The thoughtfully designed interiors blend modern comfort with subtle Indian cultural elements, creating an inviting backdrop for celebrations, casual lunches, or quick business meetings.</p>
 
@@ -423,7 +423,7 @@ export const BLOGS = [
 
 <h3>Does Desi Compass offer halal and vegetarian options?</h3>
 
-<p>All dishes are halal. Extensive vegetarian and <a href="https://desicompass.ae/menu/breakfast/south-indian">South Indian</a> pure-veg choices are available.</p>
+<p>All dishes are halal. Extensive vegetarian and   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/south-indian">South Indian</a> pure-veg choices are available.</p>
 
 <h3>Is it suitable for families and groups?</h3>
 
@@ -439,7 +439,7 @@ export const BLOGS = [
 
 <p>Next time you're in Al Barsha, make Desi Compass your destination for authentic Indian food in Al Barsha and Indian restaurants near Mall of the Emirates. You'll enjoy more than just a meal; you'll experience a taste of India done right in the heart of Dubai.</p>
 
-<p>Visit <a href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">Desi Compass Restaurant & Cafe</a> today and discover why locals and visitors alike call it their favorite. Walk in, call ahead, or order takeaway. Bring family and friends; great food tastes even better when shared. We look forward to welcoming you soon!</p>
+<p>Visit   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">Desi Compass Restaurant & Cafe</a> today and discover why locals and visitors alike call it their favorite. Walk in, call ahead, or order takeaway. Bring family and friends; great food tastes even better when shared. We look forward to welcoming you soon!</p>
 
 <p><em>For more insights on the best restaurants in Al Barsha and Dubai dining, stay tuned to our blog.</em></p>
 `
@@ -462,7 +462,7 @@ export const BLOGS = [
 
 <h2>Why Desi Compass is the Best Family Restaurant in Al Barsha 1</h2>
 
-<p><a href="https://desicompass.ae/">Desi Compass</a> has earned its reputation as a go-to group dining restaurant in Al Barsha through its focus on quality ingredients, traditional recipes, and genuine hospitality. The restaurant's thoughtfully designed space includes comfortable family seating areas that accommodate groups of all sizes, from intimate parties of 8 to larger celebrations of 30 or more.</p>
+<p>  <a target="_blank" target="_blank" href="https://desicompass.ae/">Desi Compass</a> has earned its reputation as a go-to group dining restaurant in Al Barsha through its focus on quality ingredients, traditional recipes, and genuine hospitality. The restaurant's thoughtfully designed space includes comfortable family seating areas that accommodate groups of all sizes, from intimate parties of 8 to larger celebrations of 30 or more.</p>
 
 <p>Its prime location in Al Barsha 1 makes it easily accessible via Sheikh Zayed Road and just minutes from Mall of the Emirates, turning any meal into a full-day family outing. Parents appreciate the kid-friendly options and relaxed vibe, while food lovers enjoy the rich, home-style flavors that define the best Indian restaurant in Al Barsha and the best Pakistani restaurant in Al Barsha experience.</p>
 
@@ -470,7 +470,7 @@ export const BLOGS = [
 
 <p>At Desi Compass, the menu shines with crowd-pleasing favorites that work beautifully for sharing. Signature items include aromatic biryanis, tender mutton seekh kebabs, flavorful chicken kadai, buttery naans fresh from the tandoor, and rich vegetarian delights like paneer dishes and dal makhani.</p>
 
-<p>These generous portions and balanced spices make it easy to cater to different preferences, mild for kids and bolder for adults, positioning Desi Compass as a true <a href="https://desicompass.ae/gallery">birthday party restaurant Dubai</a> favorite. Many families add a celebratory cake or special platter, and the team happily supports these personal touches for a seamless experience.</p>
+<p>These generous portions and balanced spices make it easy to cater to different preferences, mild for kids and bolder for adults, positioning Desi Compass as a true   <a target="_blank" target="_blank" href="https://desicompass.ae/gallery">birthday party restaurant Dubai</a> favorite. Many families add a celebratory cake or special platter, and the team happily supports these personal touches for a seamless experience.</p>
 
 <p>For family celebration restaurant gatherings in Dubai, the variety ensures everyone leaves satisfied, whether it's a birthday, anniversary, or weekend reunion.</p>
 
@@ -488,7 +488,7 @@ export const BLOGS = [
   <li><strong>Reservations Recommended:</strong> Especially for weekends and evenings, mention your celebration when booking for the best table setup.</li>
   <li><strong>Menu Customization:</strong> The team readily accommodates dietary needs, spice levels, and group packages.</li>
   <li><strong>Location Advantage:</strong> Easy parking and proximity to Mall of the Emirates make it hassle-free for visitors to the best restaurants near Mall of the Emirates.</li>
-  <li><strong>Value for Celebrations:</strong> <a href="https://desicompass.ae/menu">Quality food</a> at approachable prices (typically AED 35–80 per person) leaves room for extras like desserts or decorations.</li>
+  <li><strong>Value for Celebrations:</strong>   <a target="_blank" target="_blank" href="https://desicompass.ae/menu">Quality food</a> at approachable prices (typically AED 35–80 per person) leaves room for extras like desserts or decorations.</li>
 </ul>
 
 <p>Desi Compass continues to impress as a standout party venue restaurant in Al Barsha and the best celebration restaurant in Dubai.</p>
@@ -516,7 +516,7 @@ export const BLOGS = [
 
 <p>If you're planning a birthday party or family gathering, Desi Compass offers the perfect balance of tradition, comfort, and hospitality.</p>
 
-<p>Ready to celebrate? Book your table at Desi Compass Restaurant & Cafe today and let the team help create an unforgettable experience for your loved ones. Visit soon, bring the whole family, and discover why it's the <a href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">best restaurant in Al Barsha 1</a> for making memories. Share your celebration stories with us, we look forward to welcoming you!</p>
+<p>Ready to celebrate? Book your table at Desi Compass Restaurant & Cafe today and let the team help create an unforgettable experience for your loved ones. Visit soon, bring the whole family, and discover why it's the   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">best restaurant in Al Barsha 1</a> for making memories. Share your celebration stories with us, we look forward to welcoming you!</p>
 
 <p><em>Last updated July 2026. Menu items, group booking options, and opening hours may vary. Please contact Desi Compass directly before your visit.</em></p>
 `
@@ -546,7 +546,7 @@ content: `
 
 <h2>The Two Worlds of Indian Breakfast</h2>
 
-<p>Something people outside India don't always realize: "Indian breakfast" isn't one cuisine. It's closer to a dozen regional food cultures that happen to share a country. Roughly speaking, it splits into South Indian and North Indian traditions, and honestly, the <a href="https://desicompass.ae/menu/breakfast/dc-special-breakfast">best breakfast restaurants </a>in Al Barsha 1 try to do a bit of both well rather than picking one lane.</p>
+<p>Something people outside India don't always realize: "Indian breakfast" isn't one cuisine. It's closer to a dozen regional food cultures that happen to share a country. Roughly speaking, it splits into South Indian and North Indian traditions, and honestly, the   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/dc-special-breakfast">best breakfast restaurants </a>in Al Barsha 1 try to do a bit of both well rather than picking one lane.</p>
 
 <h3>South Indian Breakfast</h3>
 
@@ -572,7 +572,7 @@ content: `
 
 <h2>Halwa Puri: The Sunday Ritual</h2>
 
-<p>For a lot of Pakistani and North Indian households, <a href="https://desicompass.ae/menu/breakfast/sat-sun-special">Sunday morning breakfast</a> means one specific thing, halwa puri. Sweet semolina halwa, puffed fried bread, spicy chana masala, and sometimes nihari or paya on the side if people are feeling ambitious. It's not really an everyday breakfast, more of an event. If you want a traditional Indian breakfast in Dubai that feels like it's worth setting an alarm for, this is it.</p>
+<p>For a lot of Pakistani and North Indian households,   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/sat-sun-special">Sunday morning breakfast</a> means one specific thing, halwa puri. Sweet semolina halwa, puffed fried bread, spicy chana masala, and sometimes nihari or paya on the side if people are feeling ambitious. It's not really an everyday breakfast, more of an event. If you want a traditional Indian breakfast in Dubai that feels like it's worth setting an alarm for, this is it.</p>
 
 <h2>What We Actually Do at Desi Compass</h2>
 
@@ -590,7 +590,7 @@ content: `
 
 <h2>When to Come In</h2>
 
-<p>Weekdays are quieter, quicker, and good if you're grabbing something before work. Weekend <a href="https://desicompass.ae/menu/breakfast/pratha">breakfast in Al Barsha 1</a>, especially Friday and Saturday mornings, gets busier, and if halwa puri is on your mind, coming before 10am usually means fresher batches and less of a wait. We won't pretend otherwise; by 11am on a Saturday, it's a full house.</p>
+<p>Weekdays are quieter, quicker, and good if you're grabbing something before work. Weekend   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/pratha">breakfast in Al Barsha 1</a>, especially Friday and Saturday mornings, gets busier, and if halwa puri is on your mind, coming before 10am usually means fresher batches and less of a wait. We won't pretend otherwise; by 11am on a Saturday, it's a full house.</p>
 
 <h2>Chai Matters More Than People Think</h2>
 
@@ -612,7 +612,7 @@ content: `
 
 <h3>Where can I get the best Indian breakfast in Al Barsha 1?</h3>
 
-<p><a href="https://desicompass.ae/">Desi Compass</a> in Al Barsha 1 is one of the go-to spots, with both South Indian dishes like masala dosa and idli-vada and North Indian options like aloo paratha and chole bhature.</p>
+<p>  <a target="_blank" target="_blank" href="https://desicompass.ae/">Desi Compass</a> in Al Barsha 1 is one of the go-to spots, with both South Indian dishes like masala dosa and idli-vada and North Indian options like aloo paratha and chole bhature.</p>
 
 <h3>What's the most popular South Indian breakfast dish?</h3>
 
@@ -638,7 +638,7 @@ content: `
 
 <p>A great Indian breakfast doesn't need a huge menu. It needs a handful of things done properly: fresh dosa, a paratha that's actually flaky, chai that's been simmered instead of just heated, and chutney that tastes homemade. Al Barsha 1 happens to do this well, mostly because the community here won't settle for less.</p>
 
-<p>If you're <a href="https://maps.app.goo.gl/j8hQnG8DY4M9bkAd7">near the Mall of the Emirates</a> and in the mood for a real desi nashta, come find us at Desi Compass Restaurant &amp; Cafe. Bring the family, order a mix of South and North Indian favourites, and end it with a proper cup of chai, the way it's supposed to be made.</p>
+<p>If you're   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/j8hQnG8DY4M9bkAd7">near the Mall of the Emirates</a> and in the mood for a real desi nashta, come find us at Desi Compass Restaurant &amp; Cafe. Bring the family, order a mix of South and North Indian favourites, and end it with a proper cup of chai, the way it's supposed to be made.</p>
 `
 },
 {
@@ -662,7 +662,7 @@ content: `
 
 <p>Al Barsha 1 doesn't really slow down. It's close to Mall of the Emirates, packed with apartment buildings, and full of people who work odd hours or just eat dinner late by habit. Delivery riders, nurses coming off a shift, and families driving back from the mall around 11 p.m., a lot of Dubai runs on a schedule that doesn't match "normal" dinnertime.</p>
 
-<p>The problem is that most kitchens either shut down early or start cutting corners once the late crowd rolls in. Food gets reheated instead of freshly made, portions shrink, and service slows down. So when a restaurant near Mall of the Emirates manages to stay open late and still serve food that tastes like it did three hours earlier, people notice. That's really the whole story behind <a href="https://desicompass.ae/">Desi Compass</a>.</p>
+<p>The problem is that most kitchens either shut down early or start cutting corners once the late crowd rolls in. Food gets reheated instead of freshly made, portions shrink, and service slows down. So when a restaurant near Mall of the Emirates manages to stay open late and still serve food that tastes like it did three hours earlier, people notice. That's really the whole story behind   <a target="_blank" target="_blank" href="https://desicompass.ae/">Desi Compass</a>.</p>
 
 <h2>What Desi Compass Gets Right</h2>
 
@@ -672,7 +672,7 @@ content: `
 
 <h3>Everything on the Menu Is Halal</h3>
 
-<p>For a lot of families in Al Barsha, this one's non-negotiable. Desi Compass runs a fully halal menu, so there's no <a href="https://desicompass.ae/contact">need to ask questions</a> or read labels twice. It sounds like a small thing until you're out at 1 a.m. with limited options and need somewhere you can trust without thinking twice.</p>
+<p>For a lot of families in Al Barsha, this one's non-negotiable. Desi Compass runs a fully halal menu, so there's no   <a target="_blank" target="_blank" href="https://desicompass.ae/contact">need to ask questions</a> or read labels twice. It sounds like a small thing until you're out at 1 a.m. with limited options and need somewhere you can trust without thinking twice.</p>
 
 <h3>It Still Feels Like a Proper Sit-Down Dinner</h3>
 
@@ -694,7 +694,7 @@ content: `
 <li>Chai: Because no Pakistani or Indian meal really ends without it.</li>
 </ul>
 
-<p>Nothing fancy or overthought here. It's <a href="https://desicompass.ae/gallery">comfort food done right</a>, which is usually all anyone wants at that hour anyway.</p>
+<p>Nothing fancy or overthought here. It's   <a target="_blank" target="_blank" href="https://desicompass.ae/gallery">comfort food done right</a>, which is usually all anyone wants at that hour anyway.</p>
 
 <h2>A Few Tips Before You Go</h2>
 
@@ -733,7 +733,7 @@ content: `
 
 <h2>Final Word</h2>
 
-<p>You shouldn't have to settle for a cold sandwich just because it's late. Desi Compass in Al Barsha 1 covers the basics that actually matter, halal food, real Pakistani and Indian cooking, a comfortable place to sit, and a <a href="https://maps.app.goo.gl/j8hQnG8DY4M9bkAd7">location that's easy to reach</a> from Mall of the Emirates. Next time you're up at midnight and hungry, you already know where to go.</p>
+<p>You shouldn't have to settle for a cold sandwich just because it's late. Desi Compass in Al Barsha 1 covers the basics that actually matter, halal food, real Pakistani and Indian cooking, a comfortable place to sit, and a   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/j8hQnG8DY4M9bkAd7">location that's easy to reach</a> from Mall of the Emirates. Next time you're up at midnight and hungry, you already know where to go.</p>
 
 <p>Craving something good tonight? Stop by Desi Compass Restaurant &amp; Cafe in Al Barsha 1, or order in and enjoy authentic Pakistani and Indian food without leaving home.</p>
 `
@@ -763,7 +763,7 @@ content: `
 
 <p>There's a difference between food cooked for photos and food cooked by someone who actually knows what they're doing. The curries are slow-cooked, the naan comes fresh off the tandoor, and the biryani isn't rushed out, you can tell the rice had time to soak up the spices properly.</p>
 
-<p>New to <a href="https://desicompass.ae/menu/breakfast/dc-special-breakfast">Desi food</a>? Start simple. Butter chicken and daal are easy entry points. Grew up eating this stuff already? You'll probably recognize the flavours right away, close enough to home cooking that nobody has to explain anything to you.</p>
+<p>New to   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/dc-special-breakfast">Desi food</a>? Start simple. Butter chicken and daal are easy entry points. Grew up eating this stuff already? You'll probably recognize the flavours right away, close enough to home cooking that nobody has to explain anything to you.</p>
 
 <h3>It's a Halal Desi Restaurant, Full Stop</h3>
 
@@ -774,7 +774,7 @@ content: `
 <p>Plenty of restaurants call themselves "family-friendly" and then hand you two cramped tables pushed together. This one's actually built for it:</p>
 
 <ul>
-<li>Enough space to <a href="https://desicompass.ae/gallery">seat a big family</a> without anyone bumping elbows.</li>
+<li>Enough space to   <a target="_blank" target="_blank" href="https://desicompass.ae/gallery">seat a big family</a> without anyone bumping elbows.</li>
 <li>No rush to clear the table the second the bill lands.</li>
 <li>Milder options for kids, or anyone still easing into spicier food.</li>
 <li>Staff who stick around instead of vanishing after your order's placed.</li>
@@ -796,7 +796,7 @@ content: `
 
 <h3>Near Al Barsha Pond Park</h3>
 
-<p>Spent the afternoon at Al Barsha Pond Park with the kids? <a href="https://desicompass.ae/">Desi Compass</a> makes an easy next stop for dinner before heading home, no detour required.</p>
+<p>Spent the afternoon at Al Barsha Pond Park with the kids?   <a target="_blank" target="_blank" href="https://desicompass.ae/">Desi Compass</a> makes an easy next stop for dinner before heading home, no detour required.</p>
 
 <h3>A Few Minutes From Mall of the Emirates</h3>
 
@@ -804,7 +804,7 @@ content: `
 
 <h2>Why It Works for Tourists Too</h2>
 
-<p>Trying food in a new country can feel like a bit of a gamble, you don't know the hygiene standards, can't always <a href="https://desicompass.ae/menu/breakfast/curry">read the menu</a>, and half the time you're just pointing at something and hoping for the best.</p>
+<p>Trying food in a new country can feel like a bit of a gamble, you don't know the hygiene standards, can't always   <a target="_blank" target="_blank" href="https://desicompass.ae/menu/breakfast/curry">read the menu</a>, and half the time you're just pointing at something and hoping for the best.</p>
 
 <p>Desi Compass removes a good chunk of that guesswork. Halal is clearly labelled, so there's nothing to ask around about. Staff speak English, so ordering doesn't turn into charades. And the menu actually tells you what's mild and what isn't, so nobody's caught off guard by their first bite.</p>
 
@@ -850,7 +850,7 @@ content: `
 
 <h3>Is it good for a big family gathering?</h3>
 
-<p>The seating is built to handle larger groups comfortably, which is part of why it's popular for <a href="https://desicompass.ae/gallery">family dinners and celebrations</a>.</p>
+<p>The seating is built to handle larger groups comfortably, which is part of why it's popular for   <a target="_blank" target="_blank" href="https://desicompass.ae/gallery">family dinners and celebrations</a>.</p>
 
 <h3>What kind of food do they serve?</h3>
 
@@ -864,7 +864,7 @@ content: `
 
 <p>If you're after a famous Desi restaurant in Al Barsha 1, Desi Compass covers the basics that actually matter, real Pakistani and Indian cooking, full halal assurance, a setup that works for families, and a location that's genuinely close to Mall of the Emirates, Sheikh Zayed Road, and Dubai Internet City. Local or just visiting, it's worth the short trip.</p>
 
-<p>Bring the family, come hungry, and see for yourself why <a href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">Desi Compass Restaurant &amp; Cafe</a> is one of the go-to Desi spots near Mall of the Emirates.</p>
+<p>Bring the family, come hungry, and see for yourself why   <a target="_blank" target="_blank" href="https://maps.app.goo.gl/c526iuzTD77Mnnwp6">Desi Compass Restaurant &amp; Cafe</a> is one of the go-to Desi spots near Mall of the Emirates.</p>
 `
 },
 ];
